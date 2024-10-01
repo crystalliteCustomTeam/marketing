@@ -28,7 +28,7 @@ export default function Slider({ direction = "forward" }) {
                 {
                     [One, Two, Three, Four, Five, Six, Seven, One, Two, Three, Four, Five, Six, Seven].map((e, i) => (
                         <div key={i} className="grow-0 shrink-0 basis-auto min-w-0 pl-[50px]">
-                            <Image src={e} alt="domain" />
+                            <Image src={e} alt="domain" className="h-[50px] sm:h-auto" />
                         </div>
                     ))
                 }

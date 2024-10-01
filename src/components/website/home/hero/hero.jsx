@@ -17,10 +17,10 @@ export default function Hero() {
                 <div className="container">
                     <div>
                         <h1 className={style.title}>
-                            Award Winning <br /> Book Marketing <br /> Services!
+                            Award Winning <br className="hidden lg:block" /> Book Marketing <br className="hidden lg:block" /> Services!
                         </h1>
                         <p className={style.para}>
-                            4.6/5.0 <Image src={Stars} alt="domain" /> 15+ Businesses, 35+ Happy clients.
+                            4.6/5.0 <Image src={Stars} alt="domain" /> <span className="hidden sm:block">15+ Businesses, 35+ Happy clients.</span>
                         </p>
                         <div className={style.cta}>
                             <CTAGroupDark />
