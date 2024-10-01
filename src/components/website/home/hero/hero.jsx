@@ -21,7 +21,7 @@ export default function Hero() {
                             Award Winning <br className="hidden lg:block" /> Book Marketing <br className="hidden lg:block" /> Services!
                         </h1>
                         <p className={style.para}>
-                            4.6/5.0 <Image src={Stars} alt="domain" /> <span className="hidden sm:block">15+ Businesses, 35+ Happy clients.</span>
+                            4.6/5.0 <Image src={Stars} alt="domain" className="hidden sm:block" /> 15+ Businesses, 35+ Happy clients.
                         </p>
                         <div className={style.cta}>
                             <CTAGroupDark />
