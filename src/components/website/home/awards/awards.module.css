@@ -11,5 +11,5 @@
 }
 
 .content .para {
-    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-snug
+    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal
 }

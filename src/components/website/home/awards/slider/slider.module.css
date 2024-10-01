@@ -15,5 +15,5 @@
 }
 
 .slides p {
-    @apply text-navy text-lg 3xl:text-xl leading-snug min-h-[50px]
+    @apply text-navy text-lg 3xl:text-xl leading-normal min-h-[50px]
 }

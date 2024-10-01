@@ -7,7 +7,7 @@ import style from "./hero.module.css"
 import Stars from "media/home/hero/4.6-rating.png"
 // Components
 import { CTAGroupDark } from "@/components"
-import Video from "./video/video"
+const Video = dynamic(() => import("./video/video"))
 const Slider = dynamic(() => import("./slider/slider"))
 
 export default function Hero() {

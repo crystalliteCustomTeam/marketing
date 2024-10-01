@@ -28,7 +28,7 @@ module.exports = {
       },
       colors: {
         black: "#0F172A",
-        navy: "4A4A68",
+        navy: "#4A4A68",
         pink: "#F32FA4"
       },
       backgroundImage: {
