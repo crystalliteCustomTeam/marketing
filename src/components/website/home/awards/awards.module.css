@@ -1,5 +1,5 @@
 .root {
-    @apply py-[50px] lg:py-[100px] relative overflow-hidden
+    @apply pt-[50px] lg:py-[100px] relative overflow-hidden
 }
 
 .content {
