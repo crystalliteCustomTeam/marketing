@@ -2,19 +2,22 @@
 // Embla
 import useEmblaCarousel from "embla-carousel-react"
 import AutoScroll from "embla-carousel-auto-scroll"
-// Css
-import style from "./autoscroll.module.css"
 
-export default function AutoScrollSlider({ direction = "forward", children }) {
+export default function AutoScrollSlider({
+    direction = "forward",
+    wrapperCss = "",
+    emblaWrapper = "flex [margin-left:calc(1rem_*_-1)] items-center",
+    children
+}) {
     const plugins = [
         AutoScroll({ playOnInit: true, speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false, direction })
     ]
 
-    const [emblaRef] = useEmblaCarousel({ align: "center", dragFree: true, loop: true }, plugins)
+    const [emblaRef] = useEmblaCarousel({ align: "start", dragFree: true, loop: true }, plugins)
 
     return (
-        <div className={style.root} ref={emblaRef}>
-            <div className={style.embla}>
+        <div className={`overflow-hidden ${wrapperCss}`} ref={emblaRef}>
+            <div className={emblaWrapper}>
                 {children}
             </div>
         </div>

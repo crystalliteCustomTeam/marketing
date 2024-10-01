@@ -1,0 +1,15 @@
+.root {
+    @apply py-[50px] lg:py-[100px] relative overflow-hidden
+}
+
+.content {
+    @apply lg:w-[45%] xl:w-[48%] sm:text-center lg:text-left
+}
+
+.content .title {
+    @apply text-[30px] sm:text-[35px] md:text-[45px] xl:text-[55px] 3xl:text-[60px] font-mono font-normal leading-tight mb-4
+}
+
+.content .para {
+    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-snug
+}

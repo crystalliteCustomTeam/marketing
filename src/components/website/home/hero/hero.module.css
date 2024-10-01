@@ -7,7 +7,7 @@
 }
 
 .para {
-    @apply text-base xl:text-lg 2xl:text-xl inline-flex items-center gap-2 mb-8 leading-tight
+    @apply text-base xl:text-lg 2xl:text-xl inline-flex items-center gap-2 mb-8 leading-snug
 }
 
 .cta {

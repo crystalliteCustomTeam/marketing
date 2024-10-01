@@ -1,7 +1,0 @@
-.root {
-    @apply overflow-hidden
-}
-
-.embla {
-    @apply flex [margin-left:calc(1rem_*_-1)] items-center
-}
