@@ -1,0 +1,15 @@
+.root {
+    @apply text-white pt-[200px] xl:pt-[250px] 2xl:pt-[300px] 3xl:pt-[400px] flex flex-col items-end relative z-[1] before:content-[''] before:absolute before:[background:linear-gradient(0deg,_rgba(102,_102,_102,_0)_43.19%,_#000000_100%)] before:inset-0 before:z-[-1]
+}
+
+.title {
+    @apply font-mono font-normal text-[50px] lg:text-[70px] 2xl:text-[80px] leading-[1.1] mb-4
+}
+
+.para {
+    @apply text-lg 2xl:text-xl inline-flex items-center gap-2 mb-8
+}
+
+.cta {
+    @apply flex gap-4
+}
