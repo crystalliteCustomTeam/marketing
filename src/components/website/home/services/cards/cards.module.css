@@ -1,0 +1,13 @@
+.root {
+    @apply grid grid-cols-4 gap-8 mt-[50px]
+}
+
+.cards {
+    @apply rounded-[20px] [boxShadow:0px_10px_80px_rgba(0,_0,_0,_0.1)] p-10
+}
+
+
+
+
+
+
