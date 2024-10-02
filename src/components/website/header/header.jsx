@@ -7,7 +7,7 @@ import Logo from "media/logo.png"
 // Components
 import Navlist from "./navlist"
 import { CTA } from "@/components"
-import MobileNav from "./mobileNav"
+import MobileNav from "./mobilenav"
 // React
 import { useEffect, useState } from "react"
 
