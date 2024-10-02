@@ -1,9 +1,9 @@
 .root {
-    @apply pt-[50px] lg:py-[100px] relative overflow-hidden
+    @apply pt-[50px] lg:pt-[120px] lg:pb-[180px] relative overflow-hidden
 }
 
 .content {
-    @apply lg:w-[45%] xl:w-[48%] sm:text-center lg:text-left
+    @apply sm:text-center lg:text-left lg:absolute top-[-60px] bottom-0 left-0 flex  flex-col justify-center right-0 container
 }
 
 .content .title {
@@ -11,5 +11,5 @@
 }
 
 .content .para {
-    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal
+    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal lg:max-w-[450px] xl:w-full
 }

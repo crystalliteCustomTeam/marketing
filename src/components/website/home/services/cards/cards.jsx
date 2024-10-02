@@ -15,16 +15,22 @@ export default function Cards() {
 
     useEffect(() => {
         getDataHandle()
-    }, [])
+    }, [setData])
 
     return (
         <div className={style.root}>
             {
                 data.map(({ title, para, cta, ctaLink }, i) => (
-                    <div key={i} className={style.cards}>
-                        <h3>{title}</h3>
-                        <p>{para}</p>
-                        <div dangerouslySetInnerHTML={{__html: `<a href=${ctaLink}>${cta}</a>`}} />
+                    <div key={i} className={`${style.cards} group`}>
+                        <h3 className={`${style.title} group-hover:text-white`}
+                            dangerouslySetInnerHTML={{ __html: title }}
+                        />
+                        <p className={`${style.para} group-hover:text-white`}>
+                            {para}
+                        </p>
+                        <div className={style.cta}
+                            dangerouslySetInnerHTML={{ __html: `<a href=${ctaLink}>${cta}</a>` }}
+                        />
                     </div>
                 ))
             }
