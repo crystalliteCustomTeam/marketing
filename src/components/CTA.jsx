@@ -11,6 +11,9 @@ export function CTA({
                     ${icon === "chat" ?
                         `<img loading="lazy" src="/icons/chat.png" width="16" height="16" />` :
                         ``}
+                    ${icon === "chat-pink" ?
+                        `<img loading="lazy" src="/icons/chat-pink.png" width="17" height="17" />` :
+                        ``}
                     ${icon === "call" ?
                         `<img loading="lazy" src="/icons/call.png" width="17" height="16" />` :
                         ``}

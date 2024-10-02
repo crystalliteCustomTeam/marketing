@@ -1,5 +1,5 @@
 // Next
-import { DM_Serif_Display as FontMono } from "next/font/google"
+import { DM_Serif_Display as FontMono, Manrope } from "next/font/google"
 import localFont from "next/font/local"
 
 const fontSans = localFont({
@@ -23,4 +23,13 @@ const fontMono = FontMono({
     fallback: ["system-ui", "arial"]
 })
 
-export { fontSans, fontMono }
+const fontManrope = Manrope({
+    subsets: ["latin"],
+    variable: "--font-manrope",
+    weight: ["300", "400", "500", "600", "700"],
+    style: ["normal"],
+    display: "swap",
+    fallback: ["system-ui", "arial"]
+})
+
+export { fontSans, fontMono, fontManrope }

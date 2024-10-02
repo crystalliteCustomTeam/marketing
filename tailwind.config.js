@@ -27,12 +27,14 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
-				mono: ["var(--font-mono)", ...fontFamily.mono]
+				mono: ["var(--font-mono)", ...fontFamily.mono],
+				"manrope": ["var(--font-manrope)", ...fontFamily.mono]
 			},
 			colors: {
 				black: '#0F172A',
 				navy: '#4A4A68',
-				pink: '#F32FA4'
+				pink: '#F32FA4',
+				purple: "#C245BB"
 			},
 			backgroundImage: {
 				gradient: 'linear-gradient(90deg, #F32FA4 0%, #626EE6 100%)'

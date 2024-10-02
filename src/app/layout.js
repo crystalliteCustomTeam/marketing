@@ -3,6 +3,7 @@ import "./globals.css"
 // Fonts
 import { fontMono, fontSans } from "./fonts"
 import { Footer } from "@/components"
+import { fontManrope, fontMono, fontSans } from "./fonts"
 // Meta Data
 export const metadata = {
   title: "Book Marketing",
@@ -25,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${fontSans.variable} ${fontMono.variable} antialiased font-sans font-normal text-black`}>
+      <body className={`${fontSans.variable} ${fontMono.variable} ${fontManrope.variable} antialiased font-sans font-normal text-black`}>
         <amin>
           {children}
         </amin>

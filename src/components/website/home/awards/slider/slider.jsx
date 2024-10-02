@@ -13,7 +13,7 @@ import style from "./slider.module.css"
 export default function Slider() {
     return (
         <div className={style.root}>
-            <AutoScrollSlider wrapperCss="overflow-visible" emblaWrapper="flex [margin-left:calc(0_*_-1)]" >
+            <AutoScrollSlider wrapperCss="overflow-visible" emblaWrapper="flex" >
                 {
                     [
                         {

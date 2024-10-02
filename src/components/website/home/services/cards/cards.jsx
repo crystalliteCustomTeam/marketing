@@ -3,12 +3,18 @@
 import style from "./cards.module.css"
 // React
 import { useEffect, useState } from "react"
+// Components
+import { CTA } from "@/components"
+// Next
+import Image from "next/image"
+// Media
+import Promo from "media/home/services/promo.png"
 
 export default function Cards() {
     const [data, setData] = useState([])
 
     const getDataHandle = async () => {
-        const response = await fetch("/home/cards.json")
+        const response = await fetch("/home/services/cards.json")
         const result = await response.json()
         setData(result)
     }
@@ -34,6 +40,18 @@ export default function Cards() {
                     </div>
                 ))
             }
+            <div className={style.promo}>
+                <div>
+                    <h3 className={style.title}>
+                        Estimate Your Book Marketing <br className="hidden sm:block" />  Project’s Cost Now!
+                    </h3>
+                    <p className={style.para}>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
+                    </p>
+                    <CTA bg="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)]" text="Let’s Talk!" icon="chat-pink" />
+                </div>
+                <Image src={Promo} alt="domain" />
+            </div>
         </div>
     )
 }

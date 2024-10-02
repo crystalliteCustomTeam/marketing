@@ -1,5 +1,5 @@
 .root {
-    @apply pt-[50px] lg:pt-[120px] lg:pb-[180px] relative overflow-hidden
+    @apply relative overflow-hidden
 }
 
 .content {
