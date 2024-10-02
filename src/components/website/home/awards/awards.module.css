@@ -11,5 +11,5 @@
 }
 
 .content .para {
-    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal lg:max-w-[450px] xl:w-full
+    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal lg:max-w-[450px] xl:max-w-full
 }
