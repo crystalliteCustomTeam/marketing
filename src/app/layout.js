@@ -2,6 +2,7 @@
 import "./globals.css"
 // Fonts
 import { fontMono, fontSans } from "./fonts"
+import { Footer } from "@/components"
 // Meta Data
 export const metadata = {
   title: "Book Marketing",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <amin>
           {children}
         </amin>
+        <Footer/>
       </body>
     </html>
   )
