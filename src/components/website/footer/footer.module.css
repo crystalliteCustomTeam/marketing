@@ -1,27 +1,30 @@
 .__root {
-    @apply bg-black p-[80px]
+  @apply bg-black lg:py-[80px] py-[60px];
 }
 .__root .__grid {
-    @apply grid grid-cols-2 gap-5
+  @apply grid xl:grid-cols-2 grid-cols-1 gap-10;
 }
 .__root .__grid .__leftGrid {
-    @apply text-white
+  @apply text-white;
 }
 .__root .__grid .__leftGrid .__content {
-    @apply py-8
+  @apply py-8;
 }
-.__root .__grid .__leftGrid .__content h2{
-    @apply text-[60px] leading-tight font-mono font-normal
+.__root .__grid .__leftGrid .__content h2 {
+  @apply xl:text-[60px] lg:text-[50px] md:text-[40px] text-[30px] leading-tight font-mono font-normal;
 }
-.__root .__grid .__leftGrid .__content .__cta{
-    @apply flex gap-5 mt-10
+.__root .__grid .__leftGrid .__content .__cta {
+  @apply flex flex-wrap gap-5 mt-10;
 }
-.__root .__grid .__leftGrid .__reviewsLogos{
-    @apply flex items-center gap-10 mt-5
+.__root .__grid .__leftGrid .__reviewsLogos {
+  @apply flex items-center sm:justify-start justify-center gap-10 mt-5;
 }
-.__root .__grid .__rightGrid .__locationCard{
-    @apply flex gap-10 items-center mb-10 text-white
+.__root .__grid .__rightGrid .__locationCard {
+  @apply flex flex-wrap gap-10 items-center md:mb-10 mb-5 last:mb-0 text-white;
 }
-.__root .__grid .__rightGrid .__locationCard > div > h4{
-    @apply text-base leading-tight font-bold 
+.__root .__grid .__rightGrid .__locationCard > div > h4 {
+  @apply text-base leading-tight font-bold font-manrope mb-5;
+}
+.__root .__grid .__rightGrid .__locationCard > div > span {
+  @apply block text-sm leading-tight font-normal font-manrope mb-2;
 }
