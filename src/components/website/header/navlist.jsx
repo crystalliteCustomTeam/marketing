@@ -1,81 +1,14 @@
 // Next
 import Link from "next/link"
-// Components
+// Shadcnui
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/shadcnui"
-
-
-const servicesOne = [
-    {
-        text: "Book Launch Campaigns",
-        href: "/"
-    },
-    {
-        text: "Amazon Optimization",
-        href: "/"
-    },
-    {
-        text: "TV Interviews",
-        href: "/"
-    },
-    {
-        text: "Email Newsletter",
-        href: "/"
-    }
-]
-
-const servicesTwo = [
-    {
-        text: "Social Media Marketing",
-        href: "/"
-    },
-    {
-        text: "Online Reputation Management",
-        href: "/"
-    },
-    {
-        text: "SMM Follower & Likes",
-        href: "/",
-    },
-    {
-        text: "Influencer Marketing",
-        href: "/",
-    }
-]
-
-const servicesThree = [
-    {
-        text: "Video Book Trailer",
-        href: "/",
-    },
-    {
-        text: "Search Engine Optimization",
-        href: "/",
-    },
-    {
-        text: "Print Placement (Magazine)",
-        href: "/",
-    },
-    {
-        text: "News / Article Publishing",
-        href: "/",
-    }
-]
-
-const servicesFour = [
-    {
-        text: "Paid Ad Campaigns",
-        href: "/",
-    },
-    {
-        text: "Google Knowledge Panel",
-        href: "/",
-    }
-]
+// Components
+import Submenu from "./submenu"
 
 export default function Navlist() {
 
     return (
-        <NavigationMenu>
+        <NavigationMenu className="text-white text-lg font-manrope font-medium">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
@@ -94,60 +27,7 @@ export default function Navlist() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <div className="grid grid-cols-4 gap-3">
-                            <div>
-                                <ul>
-                                    {servicesOne.map(({ text, href }) => (
-                                        <NavigationMenuItem key={text}>
-                                            <Link href={href} legacyBehavior passHref>
-                                                <NavigationMenuLink>
-                                                    {text}
-                                                </NavigationMenuLink>
-                                            </Link>
-                                        </NavigationMenuItem>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    {servicesTwo.map(({ text, href }) => (
-                                        <NavigationMenuItem key={text}>
-                                            <Link href={href} legacyBehavior passHref>
-                                                <NavigationMenuLink>
-                                                    {text}
-                                                </NavigationMenuLink>
-                                            </Link>
-                                        </NavigationMenuItem>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    {servicesThree.map(({ text, href }) => (
-                                        <NavigationMenuItem key={text}>
-                                            <Link href={href} legacyBehavior passHref>
-                                                <NavigationMenuLink>
-                                                    {text}
-                                                </NavigationMenuLink>
-                                            </Link>
-                                        </NavigationMenuItem>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    {servicesFour.map(({ text, href }) => (
-                                        <NavigationMenuItem key={text}>
-                                            <Link href={href} legacyBehavior passHref>
-                                                <NavigationMenuLink>
-                                                    {text}
-                                                </NavigationMenuLink>
-                                            </Link>
-                                        </NavigationMenuItem>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                        <Submenu />
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>

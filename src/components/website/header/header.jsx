@@ -30,23 +30,25 @@ export default function Header() {
 
     return (
         <header>
-            <div className="absolute left-0 right-0 top-0 z-50 py-8 text-white">
-                <div className="container">
-                    <div className="flex items-center relative gap-5">
-                        <Link href="/" className="block mr-auto">
-                            <Image src={Logo} alt="Logo" />
-                        </Link>
-                        {!isMobile ?
-                            <div className="hidden xl:block xl:mr-[150px]">
-                                <Navlist />
+            <div className="absolute left-0 right-0 top-0 z-50">
+                <div className="relative">
+                    <div className="container">
+                        <div className="flex items-center gap-5 py-8">
+                            <Link href="/" className="block mr-auto">
+                                <Image src={Logo} alt="Logo" />
+                            </Link>
+                            {!isMobile ?
+                                <div className="hidden xl:block xl:mr-[150px]">
+                                    <Navlist />
+                                </div>
+                                :
+                                <div className="flex items-center xl:hidden">
+                                    <MobileNav />
+                                </div>
+                            }
+                            <div className="hidden sm:block text-white">
+                                <CTA />
                             </div>
-                            :
-                            <div className="flex items-center xl:hidden">
-                                <MobileNav />
-                            </div>
-                        }
-                        <div className="hidden sm:block">
-                            <CTA />
                         </div>
                     </div>
                 </div>
