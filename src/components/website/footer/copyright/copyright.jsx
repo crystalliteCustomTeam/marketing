@@ -28,7 +28,7 @@ export default function Copyright() {
                                 ["/", Linkedin],
                                 ["/", Youtube],
                             ].map(([link, icon], i) => (
-                                <Link href={link} className={styles.__smmIcons}>
+                                <Link key={i} href={link} className={styles.__smmIcons}>
                                     <Image src={icon} alt="icons" />
                                 </Link>
                             ))
