@@ -1,6 +1,9 @@
-import AutoScrollSlider from "./sliders/autoscroll/autoscroll";
-import { CTA, CTAGroupDark, CTAGroupLight } from "./CTA";
-import Header from "./website/header/header";
-import Footer from "./website/footer/footer";
+// Next
+import dynamic from "next/dynamic"
 
-export { Header, CTA, CTAGroupDark, CTAGroupLight, AutoScrollSlider, Footer };
+import AutoScrollSlider from "./sliders/autoscroll/autoscroll"
+import { CTA, CTAGroupDark, CTAGroupLight } from "./CTA"
+const Header = dynamic(() => import("./website/header/header"))
+import Footer from "./website/footer/footer"
+
+export { Header, CTA, CTAGroupDark, CTAGroupLight, AutoScrollSlider, Footer }

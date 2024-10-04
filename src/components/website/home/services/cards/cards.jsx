@@ -35,7 +35,10 @@ export default function Cards() {
                             {para}
                         </p>
                         <div className={style.cta}
-                            dangerouslySetInnerHTML={{ __html: `<a href=${ctaLink}>${cta}</a>` }}
+                            dangerouslySetInnerHTML={{ __html: `<a href=${ctaLink}>
+                                ${cta}
+                                <img src="/icons/right-chevron.svg" width="8" height="13" alt="domain" />
+                            </a>` }}
                         />
                     </div>
                 ))
@@ -48,7 +51,7 @@ export default function Cards() {
                     <p className={style.para}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
                     </p>
-                    <CTA bg="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)]" text="Let’s Talk!" icon="chat-pink" />
+                    <CTA css="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)] hover:bg-black hover:border hover:border-white hover:text-white" text="Let’s Talk!" icon="chat-pink" />
                 </div>
                 <Image src={Promo} alt="domain" />
             </div>

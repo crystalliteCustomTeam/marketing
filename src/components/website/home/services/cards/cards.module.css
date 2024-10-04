@@ -15,8 +15,12 @@
 }
 
 .cta {
-    @apply text-base 3xl:text-lg text-navy  leading-normal hover:text-white hover:underline hover:underline-offset-8 transition-all duration-500
+    @apply text-base 3xl:text-lg text-navy  leading-normal hover:text-white hover:underline hover:underline-offset-8 transition-all duration-500 [&_img]:opacity-0 [&:hover_img]:opacity-100 [&_img]:-translate-x-5 [&:hover_img]:translate-x-0 [&_img]:transition-all [&_img]:duration-500
 }
+.cta a {
+    @apply inline-flex gap-2 items-center
+}
+
 .promo {
     @apply col-span-12 xl:col-span-6 py-8 px-4 xl:px-6 3xl:p-10 bg-gradient hover:bg-[linear-gradient(90deg,_#626EE6_0%,_#F32FA4_100%)] rounded-[20px] [boxShadow:0px_10px_80px_rgba(0,_0,_0,_0.1)] text-white transition-all duration-500 grid grid-cols-1 sm:flex gap-5 items-center justify-between
 }
