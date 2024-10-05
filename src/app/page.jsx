@@ -1,6 +1,6 @@
 // Components
 import { Footer, Header } from "@/components"
-import { Awards, Hero, Services } from "@/components/website/home"
+import { Awards, Hero, Services, TrendingPodcast } from "@/components/website/home"
 
 export default function Page() {
   return (
@@ -9,7 +9,8 @@ export default function Page() {
       <Hero />
       <Awards />
       <Services />
-      <Footer/>
+      <TrendingPodcast />
+      <Footer />
     </>
   )
 }
