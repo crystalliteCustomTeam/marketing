@@ -21,10 +21,10 @@ import ModalVideo from "../modal-video/modal-video"
 
 export default function Testimonials() {
     const [selectedIndex, setSelectedIndex] = useState(0)
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start", })
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center", })
     const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
         containScroll: "keepSnaps",
-        dragFree: true,
+        dragFree: false,
     })
     const onThumbClick = useCallback(
         (index) => {
@@ -130,8 +130,8 @@ export default function Testimonials() {
                     </div>
                 </div>
                 <div className={styles.arrowsRoot}>
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} classes="sm:absolute sm:-left-5" />
-                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} classes="sm:absolute sm:-right-5" />
+                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} classes="sm:absolute sm:-left-0" />
+                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} classes="sm:absolute sm:-right-0" />
                 </div>
             </div>
         </div>
