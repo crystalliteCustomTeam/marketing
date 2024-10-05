@@ -25,7 +25,7 @@ export default function Footer() {
                                 <Image src={Logo} alt="logo" />
                             </Link>
                             <div className={styles.__content}>
-                                <h2>Let’s Talk About Your Project!</h2>
+                                <h2 className={styles.title}>Let’s Talk About Your Project!</h2>
                                 <div className={styles.__cta}>
                                     <CTAGroupDark />
                                 </div>

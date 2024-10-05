@@ -1,0 +1,15 @@
+.root {
+    @apply lg:py-[80px] py-[60px] bg-[#F2F5F7]
+}
+
+.content {
+    @apply flex flex-wrap xl:flex-nowrap gap-4 items-center justify-between lg:pb-[80px] pb-[60px]
+}
+
+.title {
+    @apply leading-[1.1] text-[35px] sm:text-[45px] xl:text-[55px] 3xl:text-[60px] font-mono font-normal basis-full xl:basis-auto
+}
+
+.para {
+    @apply max-w-[650px] 2xl:max-w-[860px] text-base 2xl:text-lg leading-normal text-navy
+}

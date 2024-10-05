@@ -1,0 +1,6 @@
+.thumbnailCard {
+  @apply relative;
+}
+.playIcon {
+  @apply absolute top-28 left-0 right-0 w-[80px] h-[80px] mx-auto bg-[#1b1b1d80] backdrop-blur-sm rounded-full inline-flex items-center justify-center;
+}

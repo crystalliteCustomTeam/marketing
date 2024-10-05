@@ -15,11 +15,21 @@ export default function Copyright() {
                 <div className={styles.__bottomBar}>
                     <span>© 2024 Book Marketing All Rights Reserved.</span>
                     <div className={styles.__grid}>
-                        <Link href="/">Privacy policy</Link>
-                        <span>|</span>
-                        <Link href="/">Security</Link>
-                        <span>|</span>
-                        <Link href="/">Terms of service</Link>
+                        {
+                            [
+                                ["/", "Privacy policy", true],
+                                ["/", "Security", true],
+                                ["/", "Terms of service", false],
+                            ].map(([link, text, pipeline], i) => (
+                                <div key={i}>
+                                    <Link href={link}>{text}</Link>
+                                    {
+                                        pipeline && <span>|</span>
+                                    }
+                                    
+                                </div>
+                            ))
+                        }
                     </div>
                     <div className={styles.__grid2}>
                         {
