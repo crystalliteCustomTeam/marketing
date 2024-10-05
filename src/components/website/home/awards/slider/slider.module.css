@@ -1,5 +1,5 @@
 .root {
-    @apply lg:w-[50%] 3xl:w-[55%]  py-[80px] lg:py-0 lg:ml-auto overflow-hidden
+    @apply lg:w-[50%] 3xl:w-[55%] pt-[50px]  pb-[80px] lg:py-0 lg:ml-auto overflow-hidden
 }
 
 .slides {

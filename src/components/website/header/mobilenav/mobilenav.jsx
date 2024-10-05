@@ -7,6 +7,9 @@ import { CTA } from "@/components"
 import { useState } from "react"
 // Radix
 import { CaretRightIcon } from "@radix-ui/react-icons"
+// Css
+import style from "./mobilenav.module.css"
+
 
 const mainMenu = [
     ["Home", "/"],
@@ -80,27 +83,27 @@ export default function MobileNav() {
     return (
         <>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger className="inline-flex flex-col gap-2 ml-auto">
-                    <span className="block w-[35px] h-[3px] bg-white"></span>
-                    <span className="block w-[35px] h-[3px] bg-white"></span>
-                    <span className="block w-[35px] h-[3px] bg-white"></span>
+                <SheetTrigger className={style.toggle}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent className={style.sheet}>
                     <SheetHeader className="hidden">
                         <SheetTitle>Title</SheetTitle>
                         <SheetDescription>Description</SheetDescription>
                     </SheetHeader>
-                    <ul>
+                    <ul className="mb-5">
                         {
                             mainMenu.map(([text, link], i) => (
                                 text === "Services" ? (
                                     <div key={i}>
                                         <Sheet>
-                                            <SheetTrigger>
+                                            <SheetTrigger className={style.dropdown}>
                                                 <span>Services</span>
                                                 <CaretRightIcon />
                                             </SheetTrigger>
-                                            <SheetContent>
+                                            <SheetContent className={style.submenu}>
                                                 <SheetHeader className="hidden">
                                                     <SheetTitle>Title</SheetTitle>
                                                     <SheetDescription>Description</SheetDescription>
@@ -131,7 +134,9 @@ export default function MobileNav() {
                             ))
                         }
                     </ul>
-                    <CTA bg="!text-white" />
+                    <div>
+                        <CTA css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none text-white" />
+                    </div>
                 </SheetContent>
             </Sheet>
         </>

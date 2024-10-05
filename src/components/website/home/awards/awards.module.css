@@ -3,7 +3,7 @@
 }
 
 .content {
-    @apply sm:text-center lg:text-left lg:absolute top-[-60px] bottom-0 left-0 flex  flex-col justify-center right-0 container
+    @apply sm:text-center lg:text-left lg:absolute top-[-60px] bottom-0 left-0 flex  flex-col justify-center right-0 container pt-[80px] lg:pt-0
 }
 
 .content .title {

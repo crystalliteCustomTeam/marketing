@@ -34,7 +34,8 @@ module.exports = {
 				black: '#0F172A',
 				navy: '#4A4A68',
 				pink: '#F32FA4',
-				purple: "#C245BB"
+				purple: "#C245BB",
+				blue: "#626EE6"
 			},
 			backgroundImage: {
 				gradient: 'linear-gradient(90deg, #F32FA4 0%, #626EE6 100%)'

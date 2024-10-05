@@ -15,5 +15,5 @@
 }
 
 .content .link {
-    @apply text-base 2xl:text-lg leading-normal text-navy hover:text-pink transition-all duration-500
+    @apply text-base 2xl:text-lg leading-normal text-navy hover:text-pink transition-all duration-500 hover:underline hover:underline-offset-8 inline-flex gap-2 [&_img]:opacity-0 [&_img]:-translate-x-5 [&:hover_img]:opacity-100 [&:hover_img]:translate-x-0 [&_img]:transition-all [&_img]:duration-500 items-center
 }
