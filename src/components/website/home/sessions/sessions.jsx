@@ -22,7 +22,7 @@ export default function Sessions() {
                             <ul className={style.lists}>
                                 {
                                     ["Segments Chat", "Breakout Rooms", "Screen Sharing", "Opinion Polls"].map((e, i) => (
-                                        <li className={style.items}>
+                                        <li key={i} className={style.items}>
                                             <Image src={Checkbox} alt="domain" />
                                             {e}
                                         </li>
