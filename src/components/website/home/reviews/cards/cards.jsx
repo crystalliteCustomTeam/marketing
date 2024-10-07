@@ -1,19 +1,14 @@
 "use client"
-
-// Hooks
+// React
 import { useState, useEffect, useCallback } from "react"
-
-// Embla Slider
+// Embla
 import useEmblaCarousel from "embla-carousel-react"
-
 // CSS
 import styles from "./cards.module.css"
-
 // Media
 import Client1 from "media/home/testimonials/clients/1.png"
 import Client2 from "media/home/testimonials/clients/2.png"
 import Client3 from "media/home/testimonials/clients/3.png"
-
 // Components 
 import { NextButton, PrevButton, usePrevNextButtons } from "@/components/sliders/sliderarrows/sliderarrows"
 import { CTAGroupLight } from "@/components"

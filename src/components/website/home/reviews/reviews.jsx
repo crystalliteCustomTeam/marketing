@@ -1,6 +1,9 @@
+// Next
+import dynamic from "next/dynamic"
 // Css
 import styles from "./reviews.module.css"
-import Cards from "./cards/cards"
+// Components
+const Cards = dynamic(() => import("./cards/cards"))
 
 export default function OurCustomers() {
     return (

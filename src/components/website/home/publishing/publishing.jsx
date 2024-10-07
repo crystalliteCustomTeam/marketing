@@ -21,7 +21,7 @@ export default function Publishing() {
                             <ul className={style.lists}>
                                 {
                                     ["Inspection and Assessment:", "Continued Execution!", "Coherence Verified!", "Delivery"].map((e, i) => (
-                                        <li className={style.items}>
+                                        <li key={i} className={style.items}>
                                             <Image src={Checkbox} alt="domain" />
                                             {e}
                                         </li>
