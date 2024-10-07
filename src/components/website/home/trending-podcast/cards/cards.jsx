@@ -1,3 +1,5 @@
+// Components
+import { AutoPlaySlider, AutoScrollSlider } from "@/components"
 // Css
 import style from "./cards.module.css"
 // Media
@@ -7,6 +9,13 @@ import Three from "media/home/trending-podcast/3.png"
 import Four from "media/home/trending-podcast/4.png"
 import Five from "media/home/trending-podcast/5.png"
 import Six from "media/home/trending-podcast/6.png"
+import Play from "media/home/trending-podcast/play.png"
+import Mic from "media/home/trending-podcast/mic.png"
+import Clock from "media/home/trending-podcast/clock.png"
+import Folder from "media/home/trending-podcast/folder.png"
+// Next
+import Image from "next/image"
+import Link from "next/link"
 
 const data = [
     {
@@ -73,10 +82,41 @@ const data = [
 
 export default function Cards() {
     return (
-        <div className="">
-            <div>
-
-            </div>
-        </div>
+        <AutoPlaySlider arrows={false}>
+            {
+                data.map(({ img, episode, title, name, duration, category, desc, cta }, i) => (
+                    <div key={i} className={style.slides}>
+                        <div className={style.imgBox}>
+                            <Image src={img} alt="domain" />
+                            <div className={style.episode}>
+                                <div className={style.icon}>
+                                    <Image src={Play} alt="domain" />
+                                </div>
+                                <span className={style.number}>{episode}</span>
+                            </div>
+                        </div>
+                        <h3 className={style.title}>{title}</h3>
+                        <div className={style.details}>
+                            <div className={style.col}>
+                                <Image src={Mic} alt="domain" />
+                                <span className={style.name}>{name}</span>
+                            </div>
+                            <div className={style.col}>
+                                <Image src={Clock} alt="domain" />
+                                <span className={style.name}>{duration}</span>
+                            </div>
+                            <div className={style.col}>
+                                <Image src={Folder} alt="domain" />
+                                <span className={style.name}>{category}</span>
+                            </div>
+                        </div>
+                        <p className={style.para}>{desc}</p>
+                        <Link href="/" className={style.cta}>
+                            {cta}
+                        </Link>
+                    </div>
+                ))
+            }
+        </AutoPlaySlider>
     )
 }

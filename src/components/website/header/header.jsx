@@ -6,8 +6,8 @@ import Link from "next/link"
 import Logo from "media/logo.png"
 // Components
 import Navlist from "./navlist/navlist"
-import { CTA } from "@/components"
 import MobileNav from "./mobilenav/mobilenav"
+import { CTA } from "@/components"
 // React
 import { useEffect, useState } from "react"
 // Shadcnui

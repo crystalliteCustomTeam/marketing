@@ -3,8 +3,10 @@ import dynamic from "next/dynamic"
 
 const Hero = dynamic(() => import("./hero/hero"))
 const Awards = dynamic(() => import("./awards/awards"))
-import Services from "./services/services"
-import TrendingPodcast from "./trending-podcast/trending-podcast"
+const Services = dynamic(() => import("./services/services"))
+const TrendingPodcast = dynamic(() => import("./trending-podcast/trending-podcast"))
+const Publishing = dynamic(() => import("./publishing/publishing"))
+const Sessions = dynamic(() => import("./sessions/sessions"))
 const TrustedClients = dynamic(() => import("./trusted-clients/trusted-clients"))
 const Reviews = dynamic(() => import("./reviews/reviews"))
 
@@ -13,6 +15,8 @@ export {
     Awards,
     Services,
     TrendingPodcast,
+    Publishing,
+    Sessions,
     TrustedClients,
     Reviews
 }
