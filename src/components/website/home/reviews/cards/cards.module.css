@@ -29,10 +29,10 @@
   @apply xl:text-[22px] md:text-[18px] sm:text-[16px] text-[15px] leading-normal font-medium font-manrope;
 }
 .clientName {
-  @apply block my-3 text-[#4A4A68] font-manrope font-medium lg:text-lg md:text-base text-sm leading-tight;
+  @apply block my-3 text-navy font-manrope font-medium lg:text-lg md:text-base text-sm leading-tight;
 }
 .position {
-  @apply block text-[#4A4A68] font-manrope font-normal md:text-base text-sm leading-tight;
+  @apply block text-navy font-manrope font-normal md:text-base text-sm leading-tight;
 }
 .__rightGrid {
   @apply lg:col-span-3 col-span-12;
