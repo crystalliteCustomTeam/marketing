@@ -5,7 +5,7 @@ import { useState } from "react"
 import Image from "next/image";
 // Media
 import PlayIcon from "media/icons/playIcon.svg"
-// CN
+// Shadcnui
 import { 
     Dialog,
     DialogContent,
@@ -51,7 +51,7 @@ const ModalVideo = ({
                                 autoPlay
                                 muted
                                 playsInline
-                                preload="metadata"
+                                preload="none"
                                 aria-label="Video Modal"
                                 className={isLoading ? 'hidden' : ''}
                                 onLoadedData={handleLoadedData}>
