@@ -1,5 +1,5 @@
 .embla {
-  @apply w-full m-auto overflow-hidden;
+  @apply w-full m-auto xl:overflow-hidden;
 }
 .embla__container {
   @apply flex touch-pan-y ml-[calc(1rem_*_-1)];
@@ -8,10 +8,7 @@
   @apply transform translate-x-0 translate-y-0 grow-0 shrink-0 xl:basis-[33.3%] md:basis-[50%] basis-full min-w-0 pl-[1rem];
 }
 .embla_thumbs {
-  @apply relative z-10 2xl:max-w-[1200px] xl:max-w-[1080px] lg:max-w-[900px] md:max-w-[700px] max-w-[500px] sm:mt-[-80px] mt-[-50px] mx-auto;
-}
-.embla_thumbs__viewport {
-  @apply overflow-hidden;
+  @apply relative z-10 2xl:max-w-[1200px] xl:max-w-[1080px] lg:max-w-[900px] md:max-w-[700px] max-w-[500px] sm:mt-[-80px] mt-[-50px] mx-auto overflow-hidden;
 }
 .embla_thumbs__container {
   @apply flex flex-row ml-[calc(0.8rem_*_-1)];
@@ -20,7 +17,7 @@
   @apply min-w-0 pl-[0.8rem] grow-0 shrink-0 basis-full;
 }
 .descCard {
-  @apply block 2xl:py-16 xl:py-12 md:py-10 sm:py-8 py-6 xl:px-12 md:px-10 sm:px-8 px-6 relative border border-[#D6D7DE] rounded-2xl w-[100%] mx-auto shadow-[0px_40px_80px_0px_#0000000D] backdrop-blur-[10px] bg-gradient-to-r from-[#FFFFFFD9] to-[#FFFFFF80] text-start;
+  @apply block 2xl:py-16 xl:py-12 md:py-10 sm:py-8 py-6 xl:px-12 md:px-10 sm:px-8 px-6 relative border border-[#D6D7DE] rounded-2xl w-[100%] mx-auto [backdropFilter:blur(25px)] 2xl:max-w-[1150px] xl:max-w-[1050px] lg:max-w-[850px] md:max-w-[650px] max-w-[450px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0.85)_0%,_rgba(255,_255,_255,_0.5)_100%)] text-start;
 }
 .__grid {
   @apply grid grid-cols-12 md:gap-10 gap-5;
@@ -29,7 +26,7 @@
   @apply lg:col-span-9 col-span-12;
 }
 .desc {
-  @apply xl:text-[22px] md:text-[18px] sm:text-base text-[15px] leading-normal font-medium font-manrope;
+  @apply xl:text-[22px] md:text-[18px] sm:text-[16px] text-[15px] leading-normal font-medium font-manrope;
 }
 .clientName {
   @apply block my-3 text-[#4A4A68] font-manrope font-medium lg:text-lg md:text-base text-sm leading-tight;
@@ -41,7 +38,10 @@
   @apply lg:col-span-3 col-span-12;
 }
 .cta {
-  @apply flex lg:flex-col-reverse gap-5 lg:items-end;
+  @apply sm:flex hidden lg:flex-col-reverse gap-5 lg:items-end;
+}
+.cta2 {
+  @apply sm:hidden flex lg:flex-col-reverse gap-5 lg:items-end mt-10 justify-center;
 }
 .arrowsRoot {
   @apply sm:absolute relative sm:top-[50%] sm:bottom-0 flex gap-10 w-full h-max sm:justify-between justify-center items-center sm:mt-0 mt-10;
