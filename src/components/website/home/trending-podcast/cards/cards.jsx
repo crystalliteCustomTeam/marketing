@@ -85,33 +85,33 @@ export default function Cards() {
         <AutoPlaySlider arrows={false}>
             {
                 data.map(({ img, episode, title, name, duration, category, desc, cta }, i) => (
-                    <div key={i} className="grow-0 shrink-0 basis-[340px] sm:basis-[500px] xl:basis-[550px] pl-4 text-white">
-                        <div className="rounded-xl overflow-hidden relative">
+                    <div key={i} className={style.slides}>
+                        <div className={style.imgBox}>
                             <Image src={img} alt="domain" />
-                            <div className="absolute left-[40px] bottom-[40px] flex w-[170px] bg-white rounded-full items-center h-[40px] gap-3">
-                                <div className="w-[60px] bg-blue h-full flex items-center rounded-full justify-center">
+                            <div className={style.episode}>
+                                <div className={style.icon}>
                                     <Image src={Play} alt="domain" />
                                 </div>
-                                <span className="inline-block text-[14px] leading-tight font-manrope text-purple">{episode}</span>
+                                <span className={style.number}>{episode}</span>
                             </div>
                         </div>
-                        <h3 className="text-[20px] sm:text-[26px] xl:text-[32px] font-mono leading-tight my-7">{title}</h3>
-                        <div className="flex gap-4 sm:gap-8 pb-5 border-b-2 border-white mb-5">
-                            <div className="flex items-center gap-1 sm:gap-3">
+                        <h3 className={style.title}>{title}</h3>
+                        <div className={style.details}>
+                            <div className={style.col}>
                                 <Image src={Mic} alt="domain" />
-                                <span className="text-[12px] sm:text-[16px] xl:text-[18px] leading-tight inline-block">{name}</span>
+                                <span className={style.name}>{name}</span>
                             </div>
-                            <div className="flex items-center gap-1 sm:gap-3">
+                            <div className={style.col}>
                                 <Image src={Clock} alt="domain" />
-                                <span className="text-[12px] sm:text-[16px] xl:text-[18px] leading-tight inline-block">{duration}</span>
+                                <span className={style.name}>{duration}</span>
                             </div>
-                            <div className="flex items-center gap-1 sm:gap-3">
+                            <div className={style.col}>
                                 <Image src={Folder} alt="domain" />
-                                <span className="text-[12px] sm:text-[16px] xl:text-[18px] leading-tight inline-block">{category}</span>
+                                <span className={style.name}>{category}</span>
                             </div>
                         </div>
-                        <p className="text-[14px] sm:text-[16px] xl:text-[18px] leading-normal mb-5">{desc}</p>
-                        <Link href="/" className="text-[14px] sm:text-[16px] xl:text-[18px] leading-tight !underline !underline-offset-8">
+                        <p className={style.para}>{desc}</p>
+                        <Link href="/" className={style.cta}>
                             {cta}
                         </Link>
                     </div>
