@@ -5,7 +5,7 @@ export default function Video() {
     return (
         <video
             tabIndex="0"
-            preload="metadata"
+            preload="none"
             loop
             autoPlay
             muted

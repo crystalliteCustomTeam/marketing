@@ -1,5 +1,5 @@
 .root {
-    @apply bg-black py-[90px] text-white relative
+    @apply bg-black py-[90px] text-white relative z-10
 }
 
 .left {
@@ -9,7 +9,9 @@
 .content {
     @apply max-w-[470px] mb-[50px] lg:mb-0
 }
-
+.micvector {
+    @apply absolute left-0 bottom-[100px] -z-10
+}
 .title {
     @apply text-[35px] sm:text-[40px] md:text-[50px] lg:text-[60px] 3xl:text-[65px] leading-[1.1] font-mono mb-5
 }

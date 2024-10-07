@@ -3,11 +3,16 @@ import style from "./trending-podcast.module.css"
 // Components
 import Cards from "./cards/cards"
 import { CTAGroupDark } from "@/components"
+// Media
+import MicVector from "media/home/trending-podcast/vector.png"
+// Next
+import Image from "next/image"
 
 export default function TrendingPodcast() {
     return (
         <section>
             <div className={style.root}>
+                <Image src={MicVector} alt="domain" className={style.micvector} />
                 <div className={`container ${style.left}`}>
                     <div className={style.content}>
                         <h2 className={style.title}>Top Trending Podcast!</h2>

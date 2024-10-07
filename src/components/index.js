@@ -1,11 +1,13 @@
 // Next
 import dynamic from "next/dynamic"
 
-import AutoScrollSlider from "./sliders/autoscroll/autoscroll"
+const AutoScrollSlider = dynamic(() => import("./sliders/autoscroll/autoscroll"))
+const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
+
 import { CTA, CTAGroupDark, CTAGroupLight } from "./CTA"
+
 const Header = dynamic(() => import("./website/header/header"))
-import Footer from "./website/footer/footer"
-import AutoPlaySlider from "./sliders/autoplay/autoplay"
+const Footer = dynamic(() => import("./website/footer/footer"))
 
 export {
   Header,
