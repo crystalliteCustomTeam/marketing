@@ -6,13 +6,13 @@ import Image from "next/image";
 // Media
 import PlayIcon from "media/icons/playIcon.svg"
 // Shadcnui
-import { 
+import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-    DialogTrigger 
+    DialogTrigger
 } from "@/components/shadcnui";
 // CSS
 import style from "./modal-video.module.css"
@@ -24,17 +24,18 @@ const ModalVideo = ({
     const [isLoading, setIsLoading] = useState(true)
     const handleLoadedData = () => {
         setIsLoading(false)
+        console.log('Video has loaded data')
     }
     return (
         <Dialog>
             <DialogTrigger>
                 {thumbnailImage &&
                     <div className={style.thumbnailCard}>
-                    <Image tabIndex={0} src={thumbnailImage} blurDataURL={thumbnailImage.blurDataURL} alt="clients" />
-                    <div className={style.playIcon}>
-                        <Image tabIndex={0} src={PlayIcon} alt="icon" />
+                        <Image tabIndex={0} src={thumbnailImage} blurDataURL={thumbnailImage.blurDataURL} alt="clients" />
+                        <div className={style.playIcon}>
+                            <Image tabIndex={0} src={PlayIcon} alt="icon" />
+                        </div>
                     </div>
-                </div>
                 }
             </DialogTrigger>
             <DialogContent>
@@ -47,10 +48,8 @@ const ModalVideo = ({
                         {videoSource &&
                             <video
                                 tabIndex={0}
-                                loop
-                                autoPlay
-                                muted
                                 playsInline
+                                autoPlay
                                 preload="none"
                                 aria-label="Video Modal"
                                 className={isLoading ? 'hidden' : ''}
