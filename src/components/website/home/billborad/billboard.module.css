@@ -26,5 +26,5 @@
   @apply text-sm leading-normal font-normal text-black;
 }
 .cta {
-  @apply flex items-center gap-5;
+  @apply flex items-center gap-5 text-white
 }
