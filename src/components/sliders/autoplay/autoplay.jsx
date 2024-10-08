@@ -10,6 +10,7 @@ export default function AutoPlaySlider({
     wrapperClasses = "",
     emblaWrapper = "flex [margin-left:calc(1rem_*_-1)]",
     options,
+    align = "start",
     children,
     arrows = true
 }) {
@@ -17,7 +18,7 @@ export default function AutoPlaySlider({
         ClassNames(),
         Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
     ]
-    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, align: "start", loop: true, ...options }, plugins)
+    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, align: align, loop: true, ...options }, plugins)
 
     const {
         prevBtnDisabled,
