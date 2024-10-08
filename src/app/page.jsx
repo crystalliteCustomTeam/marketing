@@ -12,8 +12,8 @@ export default function Page() {
       <TrendingPodcast />
       <Publishing />
       <Sessions />
-      <Billboard/>
       <PublishedBooks />
+      <Billboard/>
       <Reviews />
       <TrustedClients />
       <Footer />
