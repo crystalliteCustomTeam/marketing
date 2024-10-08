@@ -11,8 +11,8 @@ import Client2 from "media/home/testimonials/clients/2.png"
 import Client3 from "media/home/testimonials/clients/3.png"
 // Components 
 import { NextButton, PrevButton, usePrevNextButtons } from "@/components/sliders/sliderarrows/sliderarrows"
-import { CTAGroupLight } from "@/components"
 import ModalVideo from "../modal-video/modal-video"
+import CTAGroupReviews from "@/components/CTA/CTAGroupReview"
 
 export default function Testimonials() {
     const [selectedIndex, setSelectedIndex] = useState(0)
@@ -113,7 +113,7 @@ export default function Testimonials() {
                                         </div>
                                         <div className={styles.__rightGrid}>
                                             <div className={styles.cta}>
-                                                <CTAGroupLight />
+                                                <CTAGroupReviews />
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +127,7 @@ export default function Testimonials() {
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} classes="sm:absolute sm:-right-0" />
                 </div>
                 <div className={styles.cta2}>
-                    <CTAGroupLight />
+                    <CTAGroupReviews />
                 </div>
             </div>
         </div>
