@@ -38,10 +38,10 @@
   @apply lg:col-span-3 col-span-12;
 }
 .cta {
-  @apply sm:flex hidden flex-col gap-4 lg:items-end;
+  @apply sm:flex hidden sm:flex-col gap-4 lg:items-end;
 }
 .cta2 {
-  @apply sm:hidden flex flex-col gap-4 lg:items-end mt-10 justify-center;
+  @apply sm:hidden flex sm:flex-col gap-4 lg:items-end mt-10 justify-center;
 }
 .arrowsRoot {
   @apply sm:absolute relative sm:top-[50%] sm:bottom-0 flex gap-10 w-full h-max sm:justify-between justify-center items-center sm:mt-0 mt-10;
