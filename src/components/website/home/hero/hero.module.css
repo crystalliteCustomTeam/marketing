@@ -1,5 +1,5 @@
 .root {
-    @apply text-white pt-[200px] md:pt-[250px] 2xl:pt-[300px] 3xl:pt-[400px] flex flex-col items-end relative z-[1] before:content-[''] before:absolute before:[background:linear-gradient(0deg,_rgba(102,_102,_102,_0)_43.19%,_#000000_100%)] before:inset-0 before:z-[-1] before:opacity-50
+    @apply text-white pt-[200px] md:pt-[250px] 2xl:pt-[300px] 3xl:pt-[400px] flex flex-col items-end relative z-[1] before:content-[''] before:absolute before:[background:linear-gradient(0deg,_rgba(2,0,36,1)_0%,_rgba(2,0,36,0.3086484593837535)_100%)] before:inset-0 before:z-[-1] before:opacity-50 before:[background:rgb(2,0,36)]
 }
 
 .title {
