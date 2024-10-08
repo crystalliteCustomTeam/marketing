@@ -1,6 +1,6 @@
 // Components
 import { Footer, Header } from "@/components"
-import { Awards, Hero, Reviews, Publishing, Services, Sessions, TrendingPodcast, TrustedClients, PublishedBooks } from "@/components/website/home"
+import { Awards, Hero, Reviews, Publishing, Services, Sessions, TrendingPodcast, TrustedClients, Billboard, PublishedBooks } from "@/components/website/home"
 
 export default function Page() {
   return (
@@ -12,6 +12,7 @@ export default function Page() {
       <TrendingPodcast />
       <Publishing />
       <Sessions />
+      <Billboard/>
       <PublishedBooks />
       <Reviews />
       <TrustedClients />

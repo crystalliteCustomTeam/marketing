@@ -8,8 +8,9 @@ const TrendingPodcast = dynamic(() => import("./trending-podcast/trending-podcas
 const Publishing = dynamic(() => import("./publishing/publishing"))
 const Sessions = dynamic(() => import("./sessions/sessions"))
 const PublishedBooks = dynamic(() => import("./published-books/published-books"))
-const TrustedClients = dynamic(() => import("./trusted-clients/trusted-clients"))
 const Reviews = dynamic(() => import("./reviews/reviews"))
+const TrustedClients = dynamic(() => import("./trusted-clients/trusted-clients"))
+const Billboard = dynamic(() => import("./billborad/billboard"))
 
 export {
     Hero,
@@ -19,6 +20,7 @@ export {
     Publishing,
     Sessions,
     PublishedBooks,
+    Billboard,
+    Reviews,
     TrustedClients,
-    Reviews
 }

@@ -43,7 +43,7 @@ const ModalVideo = ({
                     <DialogTitle className="hidden">Video Player</DialogTitle>
                     <DialogDescription className="relative">
                         {thumbnailImage && isLoading && (
-                            <Image src={thumbnailImage} blurDataURL={thumbnailImage.blurDataURL} alt="thumbnail" />
+                            <Image src={thumbnailImage} blurDataURL={thumbnailImage.blurDataURL} alt="thumbnail" className="w-full" />
                         )}
                         {videoSource &&
                             <video

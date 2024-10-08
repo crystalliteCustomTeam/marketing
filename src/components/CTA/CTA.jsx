@@ -21,6 +21,12 @@ export function CTA({
                         `<img loading="lazy" alt="domain" class='transition-all duration-300' src="/icons/call-pink.png" width="17" height="16" />` :
                         ``}
                     <span>${text}</span>
+                    ${icon === "chevron-white" ?
+                        `<img loading="lazy" alt="domain" class='transition-all duration-300' src="/icons/right-chevron.png" />` :
+                        ``}
+                    ${icon === "chevron-pink" ?
+                        `<img loading="lazy" alt="domain" class='transition-all duration-300' src="/icons/chevron-up.png" />` :
+                        ``}
                 </a>`
             }}
         />

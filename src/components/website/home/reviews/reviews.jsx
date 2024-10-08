@@ -15,8 +15,8 @@ export default function OurCustomers() {
                         <p className={styles.para}>When clients engage our services, we become their strategic technology partner. Our teams help refine the business strategy and drive product marketing to achieve commercial goals.</p>
                     </div>
                     <Cards/>
-                    <div className="text-center lg:mt-[80px] mt-[40px]">
-                        <p className="lg:text-[20px] md:text-base text-sm leading-tight font-medium text-[#60677F] font-manrope">Clutch Average Review Rating: <span className="text-[#1B1B1D]">4.9 out of 5</span> <span className="text-[#FF0000]">★★★★★</span> based on <span className="text-[#1B1B1D]">20 reviews</span></p>
+                    <div className={styles.rating}>
+                        <p className={styles.para2}>Clutch Average Review Rating: <span className={styles.paraDark}>4.9 out of 5</span> <span className={styles.stars}>★★★★★</span> based on <span className={styles.paraDark}>20 reviews</span></p>
                     </div>
                 </div>
             </div>
