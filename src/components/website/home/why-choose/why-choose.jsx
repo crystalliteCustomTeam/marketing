@@ -1,8 +1,9 @@
 // Next
-import dynamic from "next/dynamic";
+import dynamic from "next/dynamic"
 // Components
-import { CTAGroupLight } from "@/components/CTA/CTA";
+import { CTAGroupLight } from "@/components"
 const Cards = dynamic(() => import("./cards/cards"))
+
 export default function WhyChoose() {
     return (
         <section>
