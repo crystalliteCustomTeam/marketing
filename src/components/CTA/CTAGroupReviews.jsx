@@ -1,6 +1,6 @@
 import { CTA } from "./CTA";
 
-export default function CTAGroupReviews() {
+export function CTAGroupReviews() {
     return (
         <>
             <CTA icon="chevron-white" css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none text-white !rounded-full" text="View case study" />

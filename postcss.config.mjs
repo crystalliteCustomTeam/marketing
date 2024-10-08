@@ -4,8 +4,8 @@ const config = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-    cssnano: { preset: 'default' }
+    ...(process.env.NEXT_PUBLIC_TAILWIND === 'production' ? { cssnano: { preset: 'default' } } : {})
   },
-};
+}
 
-export default config;
+export default config

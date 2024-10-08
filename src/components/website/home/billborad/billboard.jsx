@@ -42,7 +42,7 @@ export default function Billboard() {
                             </div>
                             <div className={styles.cta}>
                                 <CTA icon={false} text="Learn More" css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none" />
-                                <CTA icon="call-pink" css="bg-transparent border-2 text-pink border-pink hover:text-black hover:border-black [&:hover>img]:brightness-0 [&:hover>img]:invert-0" />
+                                <CTA icon="call-pink" css="bg-transparent border-2 text-black border-black hover:text-pink hover:border-pink [&>img]:brightness-0 [&>img]:invert-0 [&:hover>img]:brightness-[inherit] [&:hover>img]:invert" />
                             </div>
                         </div>
                     </div>

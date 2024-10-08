@@ -10,9 +10,8 @@ import Client1 from "media/home/testimonials/clients/1.png"
 import Client2 from "media/home/testimonials/clients/2.png"
 import Client3 from "media/home/testimonials/clients/3.png"
 // Components 
-import { NextButton, PrevButton, usePrevNextButtons } from "@/components/sliders/sliderarrows/sliderarrows"
 import ModalVideo from "../modal-video/modal-video"
-import CTAGroupReviews from "@/components/CTA/CTAGroupReview"
+import { CTAGroupReviews, NextButton, PrevButton, usePrevNextButtons } from "@/components"
 
 export default function Testimonials() {
     const [selectedIndex, setSelectedIndex] = useState(0)
