@@ -3,6 +3,7 @@ import { Footer, Header } from "@/components"
 import { Awards, Hero, Reviews, Publishing, Services, Sessions, TrendingPodcast, TrustedClients, Billboard, PublishedBooks } from "@/components/website/home"
 
 export default function Page() {
+
   return (
     <>
       <Header />
@@ -13,7 +14,7 @@ export default function Page() {
       <Publishing />
       <Sessions />
       <PublishedBooks />
-      <Billboard/>
+      <Billboard />
       <Reviews />
       <TrustedClients />
       <Footer />
