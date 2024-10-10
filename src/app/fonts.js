@@ -26,7 +26,7 @@ const fontMono = FontMono({
 const fontManrope = Manrope({
     subsets: ["latin"],
     variable: "--font-manrope",
-    weight: ["300", "400", "500", "600", "700"],
+    weight: ["300", "400", "500", "600", "700","800"],
     style: ["normal"],
     display: "swap",
     fallback: ["system-ui", "arial"]

@@ -2,8 +2,10 @@
 import dynamic from "next/dynamic"
 
 const AutoScrollSlider = dynamic(() => import("./sliders/autoscroll/autoscroll"))
-const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
 import { NextButton, PrevButton, usePrevNextButtons } from "./sliders/sliderarrows/sliderarrows"
+const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
+
+import Counter from "./Counter"
 
 import { CTA } from "./CTA/CTA"
 import { CTAGroupDark } from "./CTA/CTAGroupDark"
@@ -24,5 +26,6 @@ export {
   NextButton,
   PrevButton,
   usePrevNextButtons,
+  Counter,
   Footer,
 }

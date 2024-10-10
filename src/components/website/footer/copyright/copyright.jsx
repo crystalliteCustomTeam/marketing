@@ -13,7 +13,7 @@ export default function Copyright() {
         <div className={styles.__root}>
             <div className="container">
                 <div className={styles.__bottomBar}>
-                    <span>© 2024 Book Marketing All Rights Reserved.</span>
+                    <span className={styles.copyright}>© 2024 Book Marketing All Rights Reserved.</span>
                     <div className={styles.__grid}>
                         {
                             [
