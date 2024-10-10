@@ -30,7 +30,7 @@ const servicesOne = [
 const servicesTwo = [
     {
         text: "Social Media <br /> Marketing",
-        href: "/"
+        href: "/social-media-marketing"
     },
     {
         text: "Online Reputation <br /> Management",
@@ -82,7 +82,7 @@ export default function Submenu() {
             <div className={style.left}>
                 <div>
                     <h2 className={style.title}>
-                        Activate Your <span className="text-blue">Coupon</span> <span className="text-pink">50% off</span>
+                        Activate Your <span className="text-blue">Coupon</span> <span className="text-pink"> <br /> 50% off</span>
                     </h2>
                     <p className={style.para}>Get Affordable Rates</p>
                 </div>

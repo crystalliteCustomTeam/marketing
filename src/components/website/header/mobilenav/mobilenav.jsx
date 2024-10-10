@@ -13,9 +13,9 @@ import style from "./mobilenav.module.css"
 
 const mainMenu = [
     ["Home", "/"],
-    ["About", "/about"],
+    ["About", "/"],
     ["Services", "/"],
-    ["Portfolio", "/genre"],
+    ["Portfolio", "/"],
     ["Contact", "/"]
 ]
 
@@ -38,7 +38,7 @@ const servicesMenu = [
     },
     {
         text: "Social Media Marketing",
-        href: "/"
+        href: "/social-media-marketing"
     },
     {
         text: "Online Reputation Management",
