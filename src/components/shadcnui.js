@@ -25,6 +25,19 @@ import {
   DialogTrigger,
 } from "./ui/dialog"
 
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage
+} from "./ui/form"
+
+import { Input } from "./ui/input"
+
+import { Textarea } from "./ui/textarea"
+
 export {
   Sheet,
   SheetContent,
@@ -44,4 +57,12 @@ export {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+  Input,
+  Textarea,
+  FormLabel
 }

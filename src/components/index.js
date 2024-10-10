@@ -12,6 +12,9 @@ import { CTAGroupDark } from "./CTA/CTAGroupDark"
 import { CTAGroupLight } from "./CTA/CTAGroupLight"
 import { CTAGroupReviews } from "./CTA/CTAGroupReviews"
 
+import FrontEndForm from "./FrontEndForm"
+
+
 const Header = dynamic(() => import("./website/header/header"))
 const Footer = dynamic(() => import("./website/footer/footer"))
 
@@ -28,4 +31,5 @@ export {
   usePrevNextButtons,
   Counter,
   Footer,
+  FrontEndForm
 }

@@ -10,6 +10,7 @@ const Sessions = dynamic(() => import("./sessions/sessions"))
 const PublishedBooks = dynamic(() => import("./published-books/published-books"))
 const LatestPublished = dynamic(() => import("./latest-published/latest-published"))
 const Interviews = dynamic(() => import("./interviews/interviews"))
+const Contact = dynamic(() => import("./contact/contact"))
 const WhyChoose = dynamic(() => import("./why-choose/why-choose"))
 const Billboard = dynamic(() => import("./billborad/billboard"))
 const Reviews = dynamic(() => import("./reviews/reviews"))
@@ -25,6 +26,7 @@ export {
     PublishedBooks,
     LatestPublished,
     Interviews,
+    Contact,
     WhyChoose,
     Billboard,
     Reviews,
