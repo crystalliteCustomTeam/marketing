@@ -29,7 +29,7 @@
   @apply flex gap-4;
 }
 .counters {
-  @apply flex sm:gap-4 gap-3  divide-x divide-[#1B4219] md:max-w-[500px] md:mt-10 md:mb-[50px] my-8;
+  @apply flex sm:gap-4 gap-3  divide-x divide-[#1B4219] md:max-w-[500px] xl:mt-10 xl:mb-[50px] my-8;
 }
 .counterCard {
   @apply md:ps-8 ps-5 first:p-0 text-blue;

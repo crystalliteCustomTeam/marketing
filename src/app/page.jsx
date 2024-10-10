@@ -14,9 +14,9 @@ export default function Page() {
       <Publishing />
       <Sessions />
       <PublishedBooks />
+      <Contact />
       <LatestPublished/>
       <Interviews/>
-      <Contact />
       <WhyChoose />
       <Billboard />
       <Reviews />
