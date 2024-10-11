@@ -38,7 +38,7 @@ export default function Navlist() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
+                    <Link href="/contact-us" legacyBehavior passHref>
                         <NavigationMenuLink>
                             Contact
                         </NavigationMenuLink>

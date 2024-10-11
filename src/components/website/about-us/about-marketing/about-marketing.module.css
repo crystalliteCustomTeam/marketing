@@ -18,5 +18,5 @@
   @apply flex items-center gap-3 text-navy text-[16px] md:text-[13px] xl:text-[16px] 2xl:text-[18px] leading-normal font-medium font-manrope;
 }
 .cta {
-  @apply flex gap-5 md:mt-14 mt-8;
+  @apply flex gap-5 md:mt-8;
 }

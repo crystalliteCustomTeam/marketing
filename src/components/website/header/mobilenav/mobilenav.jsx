@@ -13,10 +13,10 @@ import style from "./mobilenav.module.css"
 
 const mainMenu = [
     ["Home", "/"],
-    ["About", "/"],
+    ["About", "/about-us"],
     ["Services", "/"],
     ["Portfolio", "/"],
-    ["Contact", "/"]
+    ["Contact", "/contact-us"]
 ]
 
 const servicesMenu = [
