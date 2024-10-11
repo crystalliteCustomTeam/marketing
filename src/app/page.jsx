@@ -1,5 +1,6 @@
 // Components
-import { Awards, Hero, Reviews, Publishing, Services, Sessions, TrendingPodcast, TrustedClients, Billboard, PublishedBooks, WhyChoose, Interviews, LatestPublished, Contact } from "@/components/website/home"
+import { Awards, WhyChoose, Reviews, TrustedClients } from "@/components"
+import { Hero, Publishing, Services, Sessions, TrendingPodcast, Billboard, PublishedBooks, Interviews, LatestPublished, Contact } from "@/components/website/home"
 
 export default function Page() {
 
@@ -13,8 +14,8 @@ export default function Page() {
       <Sessions />
       <PublishedBooks />
       <Contact />
-      <LatestPublished/>
-      <Interviews/>
+      <LatestPublished />
+      <Interviews />
       <WhyChoose />
       <Billboard />
       <Reviews />
