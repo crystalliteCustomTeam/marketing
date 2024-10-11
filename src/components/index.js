@@ -1,22 +1,35 @@
 // Next
-import dynamic from "next/dynamic"
+import dynamic from "next/dynamic";
 
-const AutoScrollSlider = dynamic(() => import("./sliders/autoscroll/autoscroll"))
-import { NextButton, PrevButton, usePrevNextButtons } from "./sliders/sliderarrows/sliderarrows"
-const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
+const AutoScrollSlider = dynamic(() =>
+  import("./sliders/autoscroll/autoscroll")
+);
+import {
+  NextButton,
+  PrevButton,
+  usePrevNextButtons,
+} from "./sliders/sliderarrows/sliderarrows";
+const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"));
 
-import Counter from "./Counter"
+import Counter from "./Counter";
 
-import { CTA } from "./CTA/CTA"
-import { CTAGroupDark } from "./CTA/CTAGroupDark"
-import { CTAGroupLight } from "./CTA/CTAGroupLight"
-import { CTAGroupReviews } from "./CTA/CTAGroupReviews"
+import { CTA } from "./CTA/CTA";
+import { CTAGroupDark } from "./CTA/CTAGroupDark";
+import { CTAGroupLight } from "./CTA/CTAGroupLight";
+import { CTAGroupReviews } from "./CTA/CTAGroupReviews";
 
-import FrontEndForm from "./FrontEndForm"
+import FrontEndForm from "./FrontEndForm";
 
+const Awards = dynamic(() => import("./website/awards/awards"));
+const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"));
+const Reviews = dynamic(() => import("./website/reviews/reviews"));
+const TrustedClients = dynamic(() =>
+  import("./website/trusted-clients/trusted-clients")
+);
+const Traditional = dynamic(() => import("./website/traditional/traditional"));
 
-const Header = dynamic(() => import("./website/header/header"))
-const Footer = dynamic(() => import("./website/footer/footer"))
+const Header = dynamic(() => import("./website/header/header"));
+const Footer = dynamic(() => import("./website/footer/footer"));
 
 export {
   Header,
@@ -31,5 +44,10 @@ export {
   usePrevNextButtons,
   Counter,
   Footer,
-  FrontEndForm
-}
+  FrontEndForm,
+  WhyChoose,
+  Awards,
+  Reviews,
+  TrustedClients,
+  Traditional,
+};
