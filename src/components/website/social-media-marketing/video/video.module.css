@@ -3,5 +3,5 @@
 }
 
 .video {
-    @apply rounded-[20px] md:rounded-[40px] w-[90%] max-w-[1300px] mx-auto [filter:drop-shadow(0px_4px_4px_rgba(0,_0,_0,_0.25))]
+    @apply rounded-[20px] md:rounded-[40px] w-[90%] max-w-[1300px] mx-auto [filter:drop-shadow(0px_20px_50px_rgba(0,_0,_0,_0.2))]
 }
