@@ -4,10 +4,12 @@ import { Hero } from "@/components/website/contact-us";
 export default function ContactUs() {
     return (
         <>
-        <Hero/>
-        <Traditional/>
-        <Reviews/>
-        <TrustedClients/>
+            <Hero />
+            <Traditional />
+            <Reviews
+                bg="bg-transparent"
+            />
+            <TrustedClients />
         </>
     )
 }

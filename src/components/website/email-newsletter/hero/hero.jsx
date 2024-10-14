@@ -3,8 +3,7 @@ import Image from "next/image"
 // Css
 import style from "./hero.module.css"
 // Media
-import Bg from "media/about-us/hero-bg.png"
-import Stats from "media/social-media-marketing/hero-stats.png"
+import Bg from "media/search-engine-optimization/hero-bg.png"
 // Components
 import { CTAGroupDark } from "@/components"
 
@@ -13,14 +12,14 @@ export default function Hero() {
         <>
             <section>
                 <div className={style.root}>
-                    <Image src={Bg} alt="domain" fill={true} priority={true} className={style.bg} />
+                    <Image src={Bg} alt="domain" fill={true} className={style.bg} />
                     <div className="container">
                         <div>
                             <h1 className={style.title}>
-                                Take Your Social Media Marketing to the Next Level
+                            Finally, An SEO Company That Delivers Results!
                             </h1>
                             <p className={style.para}>
-                                Get fired up about your social media profiles with next-generation social media marketing from THE social media marketing agency.
+                            If you are looking for top SEO content marketing, you are at the right place. Employ our systematic and results-driven SEO content marketing services to witness remarkable online growth.
                             </p>
                             <div className={style.cta}>
                                 <CTAGroupDark />

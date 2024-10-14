@@ -11,5 +11,5 @@
   @apply xl:text-[18px] md:text-[16px] text-[14px] leading-normal text-navy max-w-[690px];
 }
 .cta {
-  @apply flex items-center gap-4 mt-10;
+  @apply flex items-center gap-4 mt-8;
 }

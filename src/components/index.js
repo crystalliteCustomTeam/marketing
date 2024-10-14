@@ -27,6 +27,7 @@ const TrustedClients = dynamic(() =>
   import("./website/trusted-clients/trusted-clients")
 );
 const Traditional = dynamic(() => import("./website/traditional/traditional"));
+const Banner1 = dynamic(() => import("./website/banner-cta/banner-cta"));
 
 const Header = dynamic(() => import("./website/header/header"));
 const Footer = dynamic(() => import("./website/footer/footer"));
@@ -50,4 +51,5 @@ export {
   Reviews,
   TrustedClients,
   Traditional,
+  Banner1
 };

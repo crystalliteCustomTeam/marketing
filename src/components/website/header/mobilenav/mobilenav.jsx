@@ -58,7 +58,7 @@ const servicesMenu = [
     },
     {
         text: "Search Engine Optimization",
-        href: "/",
+        href: "/search-engine-optimization",
     },
     {
         text: "Print Placement (Magazine)",

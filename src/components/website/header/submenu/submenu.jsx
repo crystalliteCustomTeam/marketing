@@ -53,7 +53,7 @@ const servicesThree = [
     },
     {
         text: "Search Engine <br /> Optimization",
-        href: "/",
+        href: "/search-engine-optimization",
     },
     {
         text: "Print Placement <br /> (Magazine)",
