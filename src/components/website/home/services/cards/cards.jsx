@@ -9,20 +9,10 @@ import { CTA } from "@/components"
 import Image from "next/image"
 // Media
 import Promo from "media/home/services/promo.png"
+// Json
+import data from "./cards.json"
 
 export default function Cards() {
-    const [data, setData] = useState([])
-
-    const getDataHandle = async () => {
-        const response = await fetch("/home/services/cards.json")
-        const result = await response.json()
-        setData(result)
-    }
-
-    useEffect(() => {
-        getDataHandle()
-    }, [setData])
-
     return (
         <div className={style.root}>
             {
@@ -35,7 +25,8 @@ export default function Cards() {
                             {para}
                         </p>
                         <div className={style.cta}
-                            dangerouslySetInnerHTML={{ __html: `<a href=${ctaLink}>
+                            dangerouslySetInnerHTML={{
+                                __html: `<a href=${ctaLink}>
                                 ${cta}
                                 <img src="/icons/right-chevron.svg" width="8" height="13" alt="domain" />
                             </a>` }}

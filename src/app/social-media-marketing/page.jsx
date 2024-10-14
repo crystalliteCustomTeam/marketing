@@ -1,5 +1,6 @@
 // Components
-import { Hero, ConvertTypes, OurMarketing } from "@/components/website/social-media-marketing"
+import { Awards, Traditional } from "@/components"
+import { Hero, ConvertTypes, OurMarketing, ImportanceOf, TrendingPosts, SupoortedChannels, Video } from "@/components/website/social-media-marketing"
 
 export default function Page() {
     return (
@@ -7,6 +8,12 @@ export default function Page() {
             <Hero />
             <ConvertTypes />
             <OurMarketing />
+            <Awards />
+            <ImportanceOf />
+            <TrendingPosts />
+            <SupoortedChannels />
+            <Traditional />
+            <Video />
         </>
     )
 }

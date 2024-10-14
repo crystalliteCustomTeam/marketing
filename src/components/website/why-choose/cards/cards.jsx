@@ -1,6 +1,7 @@
 // Css
-import Image from "next/image"
 import styles from "./cards.module.css"
+// Next
+import Image from "next/image"
 
 export default function Cards({ data }) {
     return (
