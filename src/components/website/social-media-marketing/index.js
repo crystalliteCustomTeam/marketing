@@ -8,6 +8,8 @@ const ImportanceOf = dynamic(() => import("./importance-of/importance-of"))
 const TrendingPosts = dynamic(() => import("./trending-posts/trending-posts"))
 const SupoortedChannels = dynamic(() => import("./supoorted-channels/supoorted-channels"))
 const Video = dynamic(() => import("./video/video"))
+const CaseStudy = dynamic(() => import("./case-study/case-study"))
+const Services = dynamic(() => import("./services/services"))
 
 export {
     Hero,
@@ -16,5 +18,7 @@ export {
     ImportanceOf,
     TrendingPosts,
     SupoortedChannels,
-    Video
+    Video,
+    CaseStudy,
+    Services
 }
