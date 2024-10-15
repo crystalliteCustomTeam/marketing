@@ -14,7 +14,7 @@
   @apply 2xl:basis-[22%] xl:basis-[25%] lg:basis-[35%] basis-full;
 }
 .title {
-  @apply font-mono text-white font-normal text-[25px] md:text-[35px] lg:text-[45px] 2xl:text-[52px] 3xl:text-[60px] sm:mb-5 mb-3 leading-[1.1] xl:max-w-[100%];
+  @apply font-mono text-white font-normal text-[25px] md:text-[35px] lg:text-[45px] 2xl:text-[52px] 3xl:text-[60px] sm:mb-5 mb-3 leading-[1.1];
 }
 .para {
   @apply text-[14px] md:text-[16px] 3xl:text-[20px] leading-normal text-white sm:text-start text-justify;

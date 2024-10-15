@@ -34,7 +34,7 @@ const servicesMenu = [
     },
     {
         text: "Email Newsletter",
-        href: "/"
+        href: "/email-newsletter"
     },
     {
         text: "Social Media Marketing",
@@ -42,7 +42,7 @@ const servicesMenu = [
     },
     {
         text: "Online Reputation Management",
-        href: "/"
+        href: "/online-reputation-management"
     },
     {
         text: "SMM Follower & Likes",
@@ -66,7 +66,7 @@ const servicesMenu = [
     },
     {
         text: "News / Article Publishing",
-        href: "/",
+        href: "/news-article-publishing",
     },
     {
         text: "Paid Ad Campaigns",

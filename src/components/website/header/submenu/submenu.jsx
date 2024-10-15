@@ -23,7 +23,7 @@ const servicesOne = [
     },
     {
         text: "Email <br /> Newsletter",
-        href: "/"
+        href: "/email-newsletter"
     }
 ]
 
@@ -34,7 +34,7 @@ const servicesTwo = [
     },
     {
         text: "Online Reputation <br /> Management",
-        href: "/"
+        href: "/online-reputation-management"
     },
     {
         text: "SMM Follower <br /> & Likes",
@@ -61,7 +61,7 @@ const servicesThree = [
     },
     {
         text: "News / Article <br /> Publishing",
-        href: "/",
+        href: "/news-article-publishing",
     }
 ]
 
