@@ -1,6 +1,6 @@
 // Components
 import { Awards, Traditional } from "@/components"
-import { Hero, ConvertTypes, OurMarketing, ImportanceOf, TrendingPosts, SupoortedChannels, Video } from "@/components/website/social-media-marketing"
+import { Hero, ConvertTypes, OurMarketing, ImportanceOf, TrendingPosts, SupoortedChannels, Video, CaseStudy, Services } from "@/components/website/social-media-marketing"
 
 export default function Page() {
     return (
@@ -14,6 +14,8 @@ export default function Page() {
             <SupoortedChannels />
             <Traditional />
             <Video />
+            <CaseStudy />
+            <Services />
         </>
     )
 }
