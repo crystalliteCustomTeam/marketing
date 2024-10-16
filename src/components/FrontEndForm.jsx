@@ -11,9 +11,10 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 
 const formSchema = z.object({
-    name: z.string().min(1, {
+    firstName: z.string().min(1, {
         message: "name cannot be empty",
     }),
+    lastName: z.string(),
     phone: z.string({
         required_error: "phone is required",
         invalid_type_error: "phone must be a string",
@@ -30,38 +31,29 @@ const formSchema = z.object({
     message: z.string(),
 })
 
-const FrontEndForm = ({ label = true, theme = false }) => {
+const FrontEndForm = ({ label = true, theme = false, lastName = false }) => {
     const [loading, setLoading] = useState(false)
     const router = useRouter()
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            name: "",
+            firstName: "",
+            lastName: "",
             phone: "",
             email: "",
-            message: "",
-        },
+            message: ""
+        }
     })
     const handleSubmit = async (values) => {
         setLoading(true)
-        try {
-            const response = await fetch("/api/leads", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(values)
-            })
-
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`)
+        const filteredValues = Object.entries(values).reduce((acc, [key, value]) => {
+            if (value !== '') {
+                acc[key] = value
             }
-            router.push('/')
-        } catch (error) {
-            console.error("Error:", error)
-        } finally {
-            setLoading(false)
-        }
+            return acc
+        }, {})
+
+        console.log(filteredValues)
     }
 
     return (
@@ -70,18 +62,18 @@ const FrontEndForm = ({ label = true, theme = false }) => {
                 <div className="grid grid-cols-2 gap-5">
                     <FormField
                         control={form.control}
-                        name="name"
+                        name="firstName"
                         render={({ field }) => (
                             <FormItem>
                                 {label && <FormLabel>Full Name <span className="text-primary">*</span></FormLabel>}
                                 <FormControl>
-                                    <Input placeholder="Type Full Name" {...field} theme={theme} />
+                                    <Input placeholder={lastName ? "First Name" : "Type Full Name"} {...field} theme={theme} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                    <FormField
+                    {!lastName && <FormField
                         control={form.control}
                         name="email"
                         render={({ field }) => (
@@ -93,8 +85,34 @@ const FrontEndForm = ({ label = true, theme = false }) => {
                                 <FormMessage />
                             </FormItem>
                         )}
-                    />
+                    />}
+                    {lastName && <FormField
+                        control={form.control}
+                        name="lastName"
+                        render={({ field }) => (
+                            <FormItem>
+                                {label && <FormLabel>Last Name <span className="text-primary">*</span></FormLabel>}
+                                <FormControl>
+                                    <Input placeholder="Last Name" {...field} theme={theme} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />}
                 </div>
+                {lastName && <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                        <FormItem>
+                            {label && <FormLabel>Email Address <span className="text-primary">*</span></FormLabel>}
+                            <FormControl>
+                                <Input placeholder="Type Email" {...field} theme={theme} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />}
                 <FormField
                     control={form.control}
                     name="phone"
@@ -121,7 +139,7 @@ const FrontEndForm = ({ label = true, theme = false }) => {
                         </FormItem>
                     )}
                 />
-                <button type="submit" className="inline-flex items-center text-sm md:text-base leading-none px-3 md:px-0 h-[40px] w-[200px] md:h-[50px] rounded-xl bg-gradient justify-center uppercase transition-all duration-300 mt-5 hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] hover:bg-none">
+                <button type="submit" className="inline-flex text-white items-center text-sm md:text-base leading-none px-3 md:px-0 h-[40px] w-[200px] md:h-[50px] rounded-xl bg-gradient justify-center uppercase transition-all duration-300 mt-5 hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] hover:bg-none">
                     {loading ? "Loading..." : "Submit"}
                 </button>
             </form>
