@@ -22,15 +22,15 @@ const mainMenu = [
 const servicesMenu = [
     {
         text: "Book Launch Campaigns",
-        href: "/"
+        href: "/book-launch-campaigns"
     },
     {
         text: "Amazon Optimization",
-        href: "/"
+        href: "/amazon-optimization"
     },
     {
         text: "TV Interviews",
-        href: "/"
+        href: "/tv-interviews"
     },
     {
         text: "Email Newsletter",
@@ -46,11 +46,11 @@ const servicesMenu = [
     },
     {
         text: "SMM Follower & Likes",
-        href: "/",
+        href: "/smm-follower-&-likes",
     },
     {
         text: "Influencer Marketing",
-        href: "/",
+        href: "/influencer-marketing",
     },
     {
         text: "Video Book Trailer",
@@ -62,7 +62,7 @@ const servicesMenu = [
     },
     {
         text: "Print Placement (Magazine)",
-        href: "/",
+        href: "/print-placement",
     },
     {
         text: "News / Article Publishing",
@@ -70,7 +70,7 @@ const servicesMenu = [
     },
     {
         text: "Paid Ad Campaigns",
-        href: "/",
+        href: "/paid-ad-campaigns",
     },
     {
         text: "Google Knowledge Panel",
