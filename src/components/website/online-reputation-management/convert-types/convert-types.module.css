@@ -8,7 +8,7 @@
   @apply xl:basis-[95%] text-[30px] sm:text-[35px] md:text-[45px] lg:text-[40px] xl:text-[55px] 2xl:text-[60px] leading-[1.1] font-mono mb-3;
 }
 .para {
-  @apply lg:basis-[100%] text-[14px] sm:text-[16px] 2xl:text-[18px] text-navy leading-normal mb-5 last:mb-0;
+  @apply lg:basis-[100%] text-[14px] sm:text-[16px] text-navy leading-normal mb-5 last:mb-0;
 }
 .cta {
   @apply flex justify-center gap-x-4 mt-8 md:mt-14;

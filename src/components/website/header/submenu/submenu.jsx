@@ -11,15 +11,15 @@ import style from "./submenu.module.css"
 const servicesOne = [
     {
         text: "Book Launch <br /> Campaigns",
-        href: "/"
+        href: "/book-launch-campaigns"
     },
     {
         text: "Amazon <br /> Optimization",
-        href: "/"
+        href: "/amazon-optimization"
     },
     {
         text: "TV <br /> Interviews",
-        href: "/"
+        href: "/tv-interviews"
     },
     {
         text: "Email <br /> Newsletter",
@@ -38,11 +38,11 @@ const servicesTwo = [
     },
     {
         text: "SMM Follower <br /> & Likes",
-        href: "/",
+        href: "/smm-follower-&-likes",
     },
     {
         text: "Influencer <br /> Marketing",
-        href: "/",
+        href: "/influencer-marketing",
     }
 ]
 
@@ -57,7 +57,7 @@ const servicesThree = [
     },
     {
         text: "Print Placement <br /> (Magazine)",
-        href: "/",
+        href: "/print-placement",
     },
     {
         text: "News / Article <br /> Publishing",
@@ -68,7 +68,7 @@ const servicesThree = [
 const servicesFour = [
     {
         text: "Paid Ad <br /> Campaigns",
-        href: "/",
+        href: "/paid-ad-campaigns",
     },
     {
         text: "Google Knowledge <br /> Panel",
