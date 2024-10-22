@@ -49,7 +49,7 @@ const servicesTwo = [
 const servicesThree = [
     {
         text: "Video Book <br /> Trailer",
-        href: "/",
+        href: "/video-book-trailer",
     },
     {
         text: "Search Engine <br /> Optimization",
@@ -72,7 +72,7 @@ const servicesFour = [
     },
     {
         text: "Google Knowledge <br /> Panel",
-        href: "/",
+        href: "/google-knowledge-panel",
     }
 ]
 
