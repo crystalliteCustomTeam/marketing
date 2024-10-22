@@ -54,7 +54,7 @@ const servicesMenu = [
     },
     {
         text: "Video Book Trailer",
-        href: "/",
+        href: "/video-book-trailer",
     },
     {
         text: "Search Engine Optimization",
@@ -74,7 +74,7 @@ const servicesMenu = [
     },
     {
         text: "Google Knowledge Panel",
-        href: "/",
+        href: "/google-knowledge-panel",
     }
 ]
 

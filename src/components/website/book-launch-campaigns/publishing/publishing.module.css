@@ -1,5 +1,5 @@
 .root {
-  @apply relative pb-[50px] lg:py-[100px] mb-[80px];
+  @apply relative pb-[50px] lg:py-[100px] lg:mb-[80px];
 }
 
 .img {
@@ -15,7 +15,7 @@
 }
 
 .title {
-  @apply text-[35px] sm:text-[40px] md:text-[50px] lg:text-[60px] 3xl:text-[65px] leading-[1.1] font-mono mb-5 max-w-[600px];
+  @apply text-[35px] sm:text-[40px] xl:text-[50px] 2xl:text-[60px] 3xl:text-[65px] leading-[1.1] font-mono mb-5 max-w-[600px];
 }
 
 .para {
