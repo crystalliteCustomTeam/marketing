@@ -1,10 +1,10 @@
 // Components
 import { AutoScrollSlider } from "@/components"
 // Media
-import One from "media/home/awards/1.png"
-import Two from "media/home/awards/2.png"
-import Three from "media/home/awards/3.png"
-import Four from "media/home/awards/4.png"
+import One from "media/home/awards/1.webp"
+import Two from "media/home/awards/2.webp"
+import Three from "media/home/awards/3.webp"
+import Four from "media/home/awards/4.webp"
 // Next
 import Image from "next/image"
 // Css
