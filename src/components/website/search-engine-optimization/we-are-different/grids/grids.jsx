@@ -18,9 +18,6 @@ export default function Grids() {
                     <Image src={Others}
                         alt="domain"
                         className={styles.mobImg}
-                        priority={true}
-                        quality={100}
-                        draggable={false}
                     />
                 </div>
                 <div className={styles.deskColumn}>
@@ -28,18 +25,12 @@ export default function Grids() {
                         src={Difference}
                         alt="domain"
                         className={styles.deskImg}
-                        priority={true}
-                        quality={100}
-                        draggable={false}
                     />
                 </div>
                 <div className={styles.mobColumn}>
                     <Image src={Book_Marketing}
                         alt="domain"
                         className={styles.mobImg}
-                        priority={true}
-                        quality={100}
-                        draggable={false}
                     />
                 </div>
             </div>

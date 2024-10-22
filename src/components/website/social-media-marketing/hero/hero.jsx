@@ -13,7 +13,7 @@ export default function Hero() {
         <>
             <section>
                 <div className={style.root}>
-                    <Image src={Bg} alt="domain" fill={true} className={style.bg} />
+                    <Image src={Bg} alt="domain" fill priority placeholder="blur" className={style.bg} />
                     <div className="container">
                         <div>
                             <h1 className={style.title}>

@@ -4,15 +4,13 @@ import Image from "next/image"
 import style from "./hero.module.css"
 // Media
 import Bg from "media/contact-us/hero-bg.png"
-// Components
-import { CTAGroupDark } from "@/components"
 
 export default function Hero() {
     return (
         <>
             <section>
                 <div className={style.root}>
-                    <Image src={Bg} alt="domain" fill={true} priority={true} className={style.bg} />
+                    <Image src={Bg} alt="domain" fill priority placeholder="blur" className={style.bg} />
                     <div className="container">
                         <div className={style.grids}>
                             <div className={style.content}>

@@ -22,7 +22,7 @@ export default function Slider() {
             {
                 [One, Two, Three, Four, Five, Six, Seven, One, Two, Three, Four, Five, Six, Seven].map((e, i) => (
                     <div key={i} className={style.slides}>
-                        <Image src={e} alt="domain" />
+                        <Image src={e} priority placeholder="blur" alt="domain" />
                     </div>
                 ))
             }
