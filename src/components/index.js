@@ -11,12 +11,12 @@ const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
 
 import Counter from "./Counter"
 
+import FrontEndForm from "./FrontEndForm"
+
 import { CTA } from "./cta/cta"
 import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
-
-import FrontEndForm from "./FrontEndForm"
 
 const Awards = dynamic(() => import("./website/awards/awards"))
 const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
