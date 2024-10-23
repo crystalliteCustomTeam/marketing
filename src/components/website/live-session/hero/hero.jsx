@@ -17,7 +17,6 @@ export default function Hero() {
             alt="domain"
             fill
             priority
-            placeholder="blur"
             className={style.bg}
           />
           <div className="container">
