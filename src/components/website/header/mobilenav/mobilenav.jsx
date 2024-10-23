@@ -15,7 +15,7 @@ const mainMenu = [
     ["Home", "/"],
     ["About", "/about-us"],
     ["Services", "/"],
-    ["Portfolio", "/"],
+    ["Portfolio", "/portfolio"],
     ["Contact", "/contact-us"]
 ]
 

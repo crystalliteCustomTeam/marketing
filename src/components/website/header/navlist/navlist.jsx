@@ -31,7 +31,7 @@ export default function Navlist() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
+                    <Link href="/portfolio" legacyBehavior passHref>
                         <NavigationMenuLink>
                             Portfolio
                         </NavigationMenuLink>
