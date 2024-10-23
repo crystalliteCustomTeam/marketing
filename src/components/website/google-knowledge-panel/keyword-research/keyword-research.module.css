@@ -1,3 +1,6 @@
+.root {
+  @apply md:py-[80px] pb-[60px];
+}
 .content {
   @apply text-center 2xl:max-w-[1100px] max-w-[1000px] mx-auto pb-[60px];
 }
