@@ -18,6 +18,8 @@ import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
 
+import Fancybox from "./fancyBox/fancyBox"
+
 const Awards = dynamic(() => import("./website/awards/awards"))
 const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
 const Reviews = dynamic(() => import("./website/reviews/reviews"))
@@ -27,6 +29,7 @@ const Banner1 = dynamic(() => import("./website/banner-cta/banner-cta"));
 
 const Header = dynamic(() => import("./website/header/header"))
 const Footer = dynamic(() => import("./website/footer/footer"))
+
 
 export {
   Header,
@@ -47,5 +50,6 @@ export {
   Reviews,
   TrustedClients,
   Traditional,
-  Banner1
+  Banner1,
+  Fancybox
 }

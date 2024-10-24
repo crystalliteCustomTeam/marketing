@@ -9,9 +9,11 @@ import styles from "./cards.module.css"
 import Client1 from "media/home/testimonials/clients/1.png"
 import Client2 from "media/home/testimonials/clients/2.png"
 import Client3 from "media/home/testimonials/clients/3.png"
+import PlayIcon from "media/icons/playIcon.png"
 // Components 
-import ModalVideo from "../modal-video/modal-video"
-import { CTAGroupReviews, NextButton, PrevButton, usePrevNextButtons } from "@/components"
+import { CTAGroupReviews, Fancybox, NextButton, PrevButton, usePrevNextButtons } from "@/components"
+// Next
+import Image from "next/image"
 
 export default function Testimonials() {
     const [selectedIndex, setSelectedIndex] = useState(0)
@@ -48,22 +50,33 @@ export default function Testimonials() {
     } = usePrevNextButtons(emblaApi)
     return (
         <div className={styles.embla} ref={emblaRef}>
-            <div className={styles.embla__container}>
-                {
-                    [
-                        [Client1],
-                        [Client2],
-                        [Client3],
-                        [Client1],
-                        [Client2],
-                        [Client3]
-                    ].map(([img], i) => (
-                        <div key={i} className={styles.embla__slide}>
-                            <ModalVideo thumbnailImage={img} videoSource="https://player.vimeo.com/progressive_redirect/playback/1015023376/rendition/1080p/file.mp4?loc=external&log_user=0&signature=8b5070187e58e4b1ab884eaaa7e559eb0a1da9950479c229fab3d85e830fa455" />
-                        </div>
-                    ))
-                }
-            </div>
+            <Fancybox
+                options={{
+                    Carousel: {
+                        infinite: false,
+                    },
+                }}
+            >
+                <div className={styles.embla__container}>
+                    {
+                        [
+                            [Client1],
+                            [Client2],
+                            [Client3],
+                            [Client1],
+                            [Client2],
+                            [Client3]
+                        ].map(([img], i) => (
+                            <div key={i} className={styles.embla__slide}>
+                                <a data-fancybox="gallery" href="https://vimeo.com/1015023376">
+                                    <Image src={img} alt="domain" priority />
+                                    <Image src={PlayIcon} alt="domain" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                                </a>
+                            </div>
+                        ))
+                    }
+                </div>
+            </Fancybox>
             <div className={styles.embla_thumbs} ref={emblaThumbsRef}>
                 <div className={styles.embla_thumbs__container}>
                     {
