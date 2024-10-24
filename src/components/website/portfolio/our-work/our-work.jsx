@@ -30,29 +30,32 @@ export default function OurWork() {
         <section>
             <div className="py-[100px]">
                 <div className="container">
-                    <div className="text-center mb-[50px]">
-                        <h2 className="text-[35px] md:text-[40px] xl:text-[50px] 2xl:text-[60px] leading-none font-mono mb-3">
+                    <div className={style.content}>
+                        <h2 className={style.title}>
                             Our Work.
                         </h2>
-                        <p className="text-[14px] sm:text-[16px] xl:text-[18px] 3xl:text-[20px] leading-normal text-navy">
+                        <p className={style.para}>
                             A collection of our favorite work, showcasing the innovative solutions we've delivered.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 3xl:gap-10">
+                    <div className={style._grids}>
                         {data && data.map(({ img, name, excerpt, link, category, service }, i) => (
-                            <div key={i} className="group hover:p-5 transition-all duration-300 rounded-xl overflow-hidden cursor-pointer hover:bg-[#E4EBEF] h-[535px] [boxShadow:_0px_10px_30px_rgba(0,_0,_0,_0.07)]">
-                                <Image src={img} width={500} height={500} alt="domain" className="h-full group-hover:h-[350px] object-cover object-top transition-all duration-300 group-hover:rounded-xl group-hover:[boxShadow:_0px_10px_30px_rgba(0,_0,_0,_0.07)] w-full" />
-                                <div className="mb-3 mt-5 flex items-center justify-between">
-                                    <h3 className="text-[25px] leading-none font-mono opacity-0 transition-all duration-300 group-hover:opacity-100">{name}</h3>
+                            <div key={i} className={`${style.cards} group`}>
+                                <Image src={img} width={500} height={500} alt="domain" className={`${style._img} group-hover:rounded-xl group-hover:[boxShadow:_0px_10px_30px_rgba(0,_0,_0,_0.07)] group-hover:h-[350px]`} />
+                                <div className={style._flex}>
+                                    <h3 className={`${style.title} group-hover:opacity-100`}>{name}</h3>
                                     <div dangerouslySetInnerHTML={{
                                         __html: `<a href="${link}">
                                             <img src="portfolio/our-work/arrow.png" alt="domain" width="31" height="32" />
                                         </a>` }} />
                                 </div>
-                                <p className="text-[18px] leading-normal text-navy opacity-0 transition-all duration-300 group-hover:opacity-100 max-w-[260px]">{excerpt}</p>
+                                <p className={`${style.para} group-hover:opacity-100`}>{excerpt}</p>
                             </div>
                         ))}
                     </div>
+                    <button type="button" className={style.cta}>
+                        Load More
+                    </button>
                 </div>
             </div>
         </section>
