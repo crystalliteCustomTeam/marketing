@@ -67,7 +67,7 @@ const FrontEndForm = ({ label = true, theme = false, lastName = false }) => {
                             <FormItem>
                                 {label && <FormLabel>Full Name <span className="text-primary">*</span></FormLabel>}
                                 <FormControl>
-                                    <Input placeholder={lastName ? "First Name" : "Type Full Name"} {...field} theme={theme} />
+                                    <Input placeholder={lastName ? "First Name" : "Type Name"} {...field} theme={theme} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -133,13 +133,13 @@ const FrontEndForm = ({ label = true, theme = false, lastName = false }) => {
                         <FormItem>
                             {label && <FormLabel>Details</FormLabel>}
                             <FormControl>
-                                <Textarea placeholder="Type Full Details..." {...field} theme={theme} />
+                                <Textarea placeholder="Tell us about your project..." {...field} theme={theme} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <button type="submit" className="inline-flex text-white items-center text-sm md:text-base leading-none px-3 md:px-0 h-[40px] w-[200px] md:h-[50px] rounded-xl bg-gradient justify-center uppercase transition-all duration-300 mt-5 hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] hover:bg-none">
+                <button type="submit" className={`inline-flex text-white items-center text-sm md:text-base leading-none px-3 md:px-0 h-[40px] w-[200px] md:h-[50px] rounded-xl bg-gradient justify-center uppercase transition-all duration-300 ${theme === "popup" ? " " : "mt-5"} hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] hover:bg-none`}>
                     {loading ? "Loading..." : "Submit"}
                 </button>
             </form>

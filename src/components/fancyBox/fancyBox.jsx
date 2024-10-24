@@ -5,22 +5,26 @@ import React, { useRef, useEffect } from "react"
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-export default function Fancybox(props) {
+export default function Fancybox({ delegate, options, className, children }) {
     const containerRef = useRef(null)
 
     useEffect(() => {
         const container = containerRef.current
 
-        const delegate = props.delegate || "[data-fancybox]"
-        const options = props.options || {};
+        const delegateSelector = delegate || "[data-fancybox]"
+        const fancyboxOptions = options || {}
 
-        NativeFancybox.bind(container, delegate, options)
+        NativeFancybox.bind(container, delegateSelector, fancyboxOptions)
 
         return () => {
             NativeFancybox.unbind(container)
             NativeFancybox.close()
         };
-    });
+    }, [delegate, options])
 
-    return <div ref={containerRef}>{props.children}</div>
+    return (
+        <div ref={containerRef} className={className}>
+            {children}
+        </div>
+    )
 }

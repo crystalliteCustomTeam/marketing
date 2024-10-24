@@ -1,9 +1,6 @@
 .embla {
   @apply w-full m-auto xl:overflow-hidden;
 }
-.embla__container {
-  @apply flex touch-pan-y ml-[calc(1rem_*_-1)];
-}
 .embla__slide {
   @apply transform translate-x-0 translate-y-0 grow-0 shrink-0 xl:basis-[33.3%] md:basis-[50%] basis-full min-w-0 pl-[1rem];
 }

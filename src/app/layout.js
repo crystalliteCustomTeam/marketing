@@ -4,6 +4,7 @@ import "./globals.css"
 import { fontManrope, fontMono, fontSans } from "./fonts"
 // Components
 import { Footer, Header } from "@/components"
+import Popup from "@/components/website/popup/popup"
 // Meta Data
 export const metadata = {
   title: "Book Marketing",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Popup />
       </body>
     </html>
   );
