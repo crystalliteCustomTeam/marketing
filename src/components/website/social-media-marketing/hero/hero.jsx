@@ -30,7 +30,7 @@ export default function Hero() {
                 </div>
             </section>
             <section>
-                <Image src={Stats} alt="domain" className={style.stats} />
+                <Image src={Stats} alt="domain" priority className={style.stats} />
             </section>
         </>
     )
