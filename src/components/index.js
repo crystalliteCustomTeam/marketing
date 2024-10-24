@@ -9,16 +9,19 @@ import {
 } from "./sliders/sliderarrows/sliderarrows"
 const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
 
-import Counter from "./Counter"
+const Counter = dynamic(() => import("./Counter"))
 
-import FrontEndForm from "./FrontEndForm"
+const FrontEndForm = dynamic(() => import("./FrontEndForm"))
+
 
 import { CTA } from "./cta/cta"
 import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
 
-import Fancybox from "./fancyBox/fancyBox"
+const Fancybox = dynamic(() => import("./fancyBox/fancyBox"))
+
+const Popup = dynamic(() => import("./website/popup/popup"))
 
 const Awards = dynamic(() => import("./website/awards/awards"))
 const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
@@ -51,5 +54,6 @@ export {
   TrustedClients,
   Traditional,
   Banner1,
-  Fancybox
+  Fancybox,
+  Popup
 }

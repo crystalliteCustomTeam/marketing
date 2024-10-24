@@ -4,7 +4,7 @@ import "./globals.css"
 import { fontManrope, fontMono, fontSans } from "./fonts"
 // Components
 import { Footer, Header } from "@/components"
-import Popup from "@/components/website/popup/popup"
+import { Popup } from "@/components"
 // Meta Data
 export const metadata = {
   title: "Book Marketing",
