@@ -1,3 +1,4 @@
+"use client"
 // Shadcnui
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/shadcnui"
 // Radix
@@ -10,10 +11,23 @@ import style from "./popup.module.css"
 import Book from "media/popup-book.png"
 // Next
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 export default function Popup() {
+    const [open, setOpen] = useState(false)
+    useEffect(() => {
+        const handleLoad = () => {
+            setOpen(true);
+        }
+
+        window.onload = handleLoad
+
+        return () => {
+            window.onload = null
+        }
+    }, [setOpen])
     return (
-        <Dialog defaultOpen={true}>
+        <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
                 Open Now
             </DialogTrigger>

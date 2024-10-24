@@ -16,7 +16,6 @@ export default function Counter({ value = 0, direction = "up", className }) {
 
   useEffect(() => {
     if (isInView) {
-      console.log("Element is in view, setting motionValue to:", value)
       motionValue.set(value)
     }
   }, [isInView, value, motionValue])
