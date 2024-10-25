@@ -4,7 +4,7 @@ import styles from "./believe-in.module.css"
 import { CTAGroupLight } from "@/components"
 import Cards from "./cards/cards"
 
-export default function BelieveIn () {
+export default function BelieveIn() {
     return (
         <section>
             <div className={styles.root}>
@@ -12,9 +12,9 @@ export default function BelieveIn () {
                     <div className={styles.content}>
                         <h2 className={styles.title}>What We Believe In.</h2>
                     </div>
-                    <Cards/>
+                    <Cards />
                     <div className={styles.cta}>
-                        <CTAGroupLight/>
+                        <CTAGroupLight />
                     </div>
                 </div>
             </div>

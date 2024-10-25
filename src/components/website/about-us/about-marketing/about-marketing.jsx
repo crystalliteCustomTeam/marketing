@@ -8,6 +8,8 @@ import styles from "./about-marketing.module.css"
 import Cards from "./cards/cards"
 import { CTAGroupLight } from "@/components"
 
+const data = ["Tech Integrated Solutions", "Client Focused Approach", "Disruptive Innovation", "Digital Transformation Partner"]
+
 export default function AboutMarketing() {
     return (
         <section>
@@ -19,7 +21,7 @@ export default function AboutMarketing() {
                             <p className={styles.para}>Book Marketing is helping startups and organizations build and implement digital transformation solutions tailored to their demand and needs.</p>
                             <ul className={styles.lists}>
                                 {
-                                    ["Tech Integrated Solutions", "Client Focused Approach", "Disruptive Innovation", "Digital Transformation Partner"].map((e, i) => (
+                                    data.map((e, i) => (
                                         <li key={i} className={styles.items}>
                                             <Image src={Checkbox} alt="domain" />
                                             {e}
@@ -28,10 +30,10 @@ export default function AboutMarketing() {
                                 }
                             </ul>
                             <div className={styles.cta}>
-                                <CTAGroupLight/>
+                                <CTAGroupLight />
                             </div>
                         </div>
-                        <Cards/>
+                        <Cards />
                     </div>
                 </div>
             </div>

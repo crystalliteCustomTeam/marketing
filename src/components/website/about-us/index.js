@@ -1,9 +1,6 @@
-// Next
-import dynamic from "next/dynamic"
-
-const Hero = dynamic(() => import("./hero/hero"))
-const AboutMarketing = dynamic(() => import("./about-marketing/about-marketing"))
-const BelieveIn = dynamic(() => import("./believe-in/believe-in"))
+import Hero from "./hero/hero"
+import AboutMarketing from "./about-marketing/about-marketing"
+import BelieveIn from "./believe-in/believe-in"
 
 export {
     Hero,
