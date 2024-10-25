@@ -1,11 +1,12 @@
 // Next
-import Image from "next/image";
+import Image from "next/image"
 // Components
-import { CTAGroupLight } from "@/components";
+import { CTAGroupLight } from "@/components"
 // Css
 import styles from "./automation-services.module.css"
 // Media
 import Units from "media/amazon-optimization/units.png"
+
 export default function AutomationServices() {
     return (
         <section>

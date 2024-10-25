@@ -4,6 +4,7 @@ import Image from "next/image";
 import AmazonAds from "media/amazon-optimization/amazon-ads.png"
 // Css
 import styles from "./amazon-ecommerce.module.css"
+
 export default function AmazonEcommerce() {
     return (
         <section>

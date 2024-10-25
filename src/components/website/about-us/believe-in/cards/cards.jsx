@@ -1,4 +1,6 @@
+// Css
 import styles from "./cards.module.css"
+
 export default function Cards() {
     return (
         <div className={styles.grids}>
@@ -30,13 +32,13 @@ export default function Cards() {
                     ],
                     [
                         "Client Value",
-                        "Prioritizing customer experience and accessibility, our approach is rooted in understanding our clients’ needs."
+                        "Prioritizing customer experience and accessibility, our approach is rooted in understanding our clients’ needs."
                     ],
                     [
                         "Responsibility",
-                        "Committed to the well-being of our planet and future generations, we actively launch initiatives that promote responsible and sustainable growth."
+                        "Committed to the well-being of our planet and future generations, we actively launch initiatives that promote responsible and sustainable growth."
                     ],
-                ].map(([ title, desc ], i) => (
+                ].map(([title, desc], i) => (
                     <div key={i} className={`${styles.cards} group`}>
                         <h3 className={`${styles.title} group-hover:text-white`}
                             dangerouslySetInnerHTML={{ __html: title }}

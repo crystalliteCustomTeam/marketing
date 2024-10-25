@@ -1,6 +1,9 @@
-import { CTAGroupLight } from "@/components"
+// Css
 import styles from "./believe-in.module.css"
+// Components
+import { CTAGroupLight } from "@/components"
 import Cards from "./cards/cards"
+
 export default function BelieveIn () {
     return (
         <section>

@@ -5,9 +5,7 @@ import styles from "./reviews.module.css"
 // Components
 const Cards = dynamic(() => import("./cards/cards"))
 
-export default function OurCustomers({
-    bg = "bg-[#F2F5F7]"
-}) {
+export default function OurCustomers({ bg = "bg-[#F2F5F7]" }) {
     return (
         <section>
             <div className={`${styles.root} ${bg}`}>

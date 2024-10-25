@@ -3,10 +3,7 @@ import styles from "./banner-cta.module.css"
 // Components
 import { CTA } from "@/components"
 
-export default function BannerCta({
-    title,
-    desc
-}) {
+export default function BannerCta({ title, desc }) {
     return (
         <section>
             <div className={styles.root}>

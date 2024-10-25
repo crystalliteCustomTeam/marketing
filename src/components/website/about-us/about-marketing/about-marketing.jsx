@@ -4,8 +4,10 @@ import Image from "next/image"
 import Checkbox from "media/home/checkbox-pink.svg"
 // Css
 import styles from "./about-marketing.module.css"
+// Components
 import Cards from "./cards/cards"
 import { CTAGroupLight } from "@/components"
+
 export default function AboutMarketing() {
     return (
         <section>

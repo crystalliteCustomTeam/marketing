@@ -4,7 +4,6 @@ import Image from "next/image"
 import style from "./hero.module.css"
 // Media
 import Bg from "media/about-us/hero-bg.png"
-import Stats from "media/social-media-marketing/hero-stats.png"
 // Components
 import { CTAGroupDark } from "@/components"
 

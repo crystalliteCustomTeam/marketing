@@ -1,9 +1,9 @@
 // Css
-import { CTAGroupLight } from "@/components"
 import style from "./convert-types.module.css"
 // Next
 import dynamic from "next/dynamic"
 // Components
+import { CTAGroupLight } from "@/components"
 const Cards = dynamic(() => import("./cards/cards"))
 
 export default function ConvertTypes() {

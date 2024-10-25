@@ -1,11 +1,11 @@
+// Css
+import styles from "./billboard.module.css"
 // Next
-import Image from "next/image";
+import Image from "next/image"
 // Media
 import Banner from "media/home/billboard/banner_bg.png"
 // Components
 import { CTA } from "@/components"
-// Css
-import styles from "./billboard.module.css"
 
 export default function Billboard() {
     return (

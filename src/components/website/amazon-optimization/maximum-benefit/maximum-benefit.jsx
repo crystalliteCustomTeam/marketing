@@ -6,6 +6,7 @@ import { CTAGroupLight } from "@/components";
 import DeliveryModel from "media/amazon-optimization/deliveryModel.png"
 // CSs
 import styles from "./maximum-benefit.module.css"
+
 export default function MaximumBenefit() {
     return (
         <section>
