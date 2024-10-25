@@ -9,6 +9,8 @@ import style from "./sessions.module.css"
 // Components
 import { CTA } from "@/components"
 
+const data = ["Segments Chat", "Breakout Rooms", "Screen Sharing", "Opinion Polls"]
+
 export default function Sessions() {
     return (
         <section>
@@ -21,7 +23,7 @@ export default function Sessions() {
                             <p className={style.para}>LiveSession helps product teams analyze users’ behavior, improve UX, find bugs, and increase conversion rates using session replays, and event-based product analytics.</p>
                             <ul className={style.lists}>
                                 {
-                                    ["Segments Chat", "Breakout Rooms", "Screen Sharing", "Opinion Polls"].map((e, i) => (
+                                    data.map((e, i) => (
                                         <li key={i} className={style.items}>
                                             <Image src={Checkbox} alt="domain" />
                                             {e}

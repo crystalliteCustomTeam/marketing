@@ -1,14 +1,13 @@
 // Next
 import Image from "next/image"
-import dynamic from "next/dynamic"
 // Css
 import style from "./hero.module.css"
 // Media
 import Stars from "media/home/hero/4.6-rating.png"
 // Components
 import { CTAGroupDark } from "@/components"
-const Video = dynamic(() => import("./video/video"))
-const Slider = dynamic(() => import("./slider/slider"))
+import Video from "./video/video"
+import Slider from "./slider/slider"
 
 export default function Hero() {
     return (

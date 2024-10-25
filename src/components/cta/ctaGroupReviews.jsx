@@ -1,4 +1,5 @@
-import { CTA } from "./cta";
+// Components
+import { CTA } from "./cta"
 
 export function CTAGroupReviews() {
     return (

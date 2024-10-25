@@ -6,8 +6,93 @@ import { CTA } from "@/components"
 import Image from "next/image"
 // Media
 import Promo from "media/home/services/promo.png"
-// Json
-import data from "./cards.json"
+
+const data = [
+    {
+        "title": "Book Launch <br class='hidden sm:block' /> Campaigns",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Social Media <br class='hidden sm:block' /> Marketing",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Video Book <br class='hidden sm:block' /> Trailer",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "News / Article <br class='hidden sm:block' /> Publishing",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Amazon <br class='hidden sm:block' /> Optimization",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Online Reputation <br class='hidden sm:block' /> Management",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Search Engine <br class='hidden sm:block' /> Optimization",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Paid Ad <br class='hidden sm:block' /> Campaigns",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "TV <br class='hidden sm:block' /> Interviews",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "SMM Follower <br class='hidden sm:block' /> & Likes",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Print Placement <br class='hidden sm:block' /> (Magazine)",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Google Knowledge <br class='hidden sm:block' /> Panel",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Email <br class='hidden sm:block' /> Newsletter",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    },
+    {
+        "title": "Influencer <br class='hidden sm:block' /> Marketing",
+        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+        "cta": "Read More",
+        "ctaLink": "javascript:;"
+    }
+]
 
 export default function Cards() {
     return (

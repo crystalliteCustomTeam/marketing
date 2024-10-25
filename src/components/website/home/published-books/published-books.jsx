@@ -1,9 +1,7 @@
 // Css
 import style from "./published-books.module.css"
-// Next
-import dynamic from "next/dynamic"
 // Components
-const Slider = dynamic(() => import("./slider/slider"))
+import Slider from "./slider/slider"
 import { CTAGroupLight } from "@/components"
 
 export default function PublishedBooks() {

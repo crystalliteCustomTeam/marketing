@@ -7,6 +7,12 @@ import Book from "media/home/hardcover_book.png"
 // Components
 import { Counter, CTAGroupLight } from "@/components"
 
+const data = [
+    [5, "Books Published"],
+    [4.5, "User Reviews"],
+    [4, "Best Seller Awards"],
+]
+
 export default function LatestPublished() {
     return (
         <section>
@@ -19,11 +25,7 @@ export default function LatestPublished() {
                             <p className={style.para}>All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
                             <div className={style.counters}>
                                 {
-                                    [
-                                        [5, "Books Published"],
-                                        [4.5, "User Reviews"],
-                                        [4, "Best Seller Awards"],
-                                    ].map(([value, text], i) => (
+                                    data.map(([value, text], i) => (
                                         <div key={i} className={style.counterCard}>
                                             <Counter value={value} className={style.numbers} />
                                             <span className={style.about}>{text}</span>

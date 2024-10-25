@@ -7,6 +7,21 @@ import Banner from "media/home/billboard/banner_bg.png"
 // Components
 import { CTA } from "@/components"
 
+const data = [
+    [
+        "90%",
+        "Public opinion of Times SQ - 90% consider TSQ as the most recognizable part of NYC."
+    ],
+    [
+        "243K+",
+        "Daily Social Mentions - Over 243K+ people post about Times Square on social media daily."
+    ],
+    [
+        "286K+",
+        "Average Daily Pedestrian Count -  Over 286K+ pedestrians passing through daily."
+    ],
+]
+
 export default function Billboard() {
     return (
         <section>
@@ -19,20 +34,7 @@ export default function Billboard() {
                             <p className={styles.para}>Times Square, a major tourist attraction known for  its iconic outdoor advertising, giant billboards, and digital displays,  makes it one of the world's most photographed landmarks</p>
                             <div className={styles.opinion}>
                                 {
-                                    [
-                                        [
-                                            "90%",
-                                            "Public opinion of Times SQ - 90% consider TSQ as the most recognizable part of NYC."
-                                        ],
-                                        [
-                                            "243K+",
-                                            "Daily Social Mentions - Over 243K+ people post about Times Square on social media daily."
-                                        ],
-                                        [
-                                            "286K+",
-                                            "Average Daily Pedestrian Count -  Over 286K+ pedestrians passing through daily."
-                                        ],
-                                    ].map(([title, desc], i) => (
+                                    data.map(([title, desc], i) => (
                                         <div key={i}>
                                             <h4 className={styles.counter}>{title}</h4>
                                             <p className={styles.desc}>{desc}</p>

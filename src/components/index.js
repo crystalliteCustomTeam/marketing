@@ -1,37 +1,22 @@
-// Next
-import dynamic from "next/dynamic"
-
-const AutoScrollSlider = dynamic(() => import("./sliders/autoscroll/autoscroll"))
-import {
-  NextButton,
-  PrevButton,
-  usePrevNextButtons,
-} from "./sliders/sliderarrows/sliderarrows"
-const AutoPlaySlider = dynamic(() => import("./sliders/autoplay/autoplay"))
-
-const Counter = dynamic(() => import("./Counter"))
-
-const FrontEndForm = dynamic(() => import("./FrontEndForm"))
-
-
+import { NextButton, PrevButton, usePrevNextButtons } from "./sliders/sliderarrows/sliderarrows"
+import AutoScrollSlider from "./sliders/autoscroll/autoscroll"
+import AutoPlaySlider from "./sliders/autoplay/autoplay"
+import Counter from "./Counter"
+import FrontEndForm from "./FrontEndForm"
 import { CTA } from "./cta/cta"
 import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
-
-const Fancybox = dynamic(() => import("./fancyBox/fancyBox"))
-
-const Popup = dynamic(() => import("./website/popup/popup"))
-
-const Awards = dynamic(() => import("./website/awards/awards"))
-const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
-const Reviews = dynamic(() => import("./website/reviews/reviews"))
-const TrustedClients = dynamic(() => import("./website/trusted-clients/trusted-clients"))
-const Traditional = dynamic(() => import("./website/traditional/traditional"))
-const Banner1 = dynamic(() => import("./website/banner-cta/banner-cta"));
-
-const Header = dynamic(() => import("./website/header/header"))
-const Footer = dynamic(() => import("./website/footer/footer"))
+import Fancybox from "./fancyBox/fancyBox"
+import Popup from "./website/popup/popup"
+import Awards from "./website/awards/awards"
+import WhyChoose from "./website/why-choose/why-choose"
+import Reviews from "./website/reviews/reviews"
+import TrustedClients from "./website/trusted-clients/trusted-clients"
+import Traditional from "./website/traditional/traditional"
+import Banner1 from "./website/banner-cta/banner-cta"
+import Header from "./website/header/header"
+import Footer from "./website/footer/footer"
 
 
 export {

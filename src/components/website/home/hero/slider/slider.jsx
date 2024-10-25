@@ -13,6 +13,8 @@ import { AutoScrollSlider } from "@/components"
 // Css
 import style from "./slider.module.css"
 
+const data = [One, Two, Three, Four, Five, Six, Seven, One, Two, Three, Four, Five, Six, Seven]
+
 export default function Slider() {
     return (
         <AutoScrollSlider
@@ -20,7 +22,7 @@ export default function Slider() {
             emblaWrapper="flex [margin-left:calc(30px_*_-1)] md:[margin-left:calc(50px_*_-1)] items-center"
         >
             {
-                [One, Two, Three, Four, Five, Six, Seven, One, Two, Three, Four, Five, Six, Seven].map((e, i) => (
+                data.map((e, i) => (
                     <div key={i} className={style.slides}>
                         <Image src={e} alt="domain" />
                     </div>
