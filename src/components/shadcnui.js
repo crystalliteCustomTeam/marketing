@@ -31,12 +31,15 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage
+  FormMessage,
+  FormDescription
 } from "./ui/form"
 
 import { Input } from "./ui/input"
 
 import { Textarea } from "./ui/textarea"
+
+import { Checkbox } from "@/components/ui/checkbox"
 
 export {
   Sheet,
@@ -64,5 +67,7 @@ export {
   FormMessage,
   Input,
   Textarea,
-  FormLabel
+  FormLabel,
+  Checkbox,
+  FormDescription
 }

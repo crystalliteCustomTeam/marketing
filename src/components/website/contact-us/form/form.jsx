@@ -11,7 +11,7 @@ export default function contact() {
                     <div className={style.content}>
                         <h2 className={style.title}>Interested? Let’s talk!</h2>
                         <p className={style.para}>Just fill this simple form in and we will contact you promptly to discuss your project. Hate forms? Drop us a line at</p>
-                        <FrontEndForm label={false} lastName={true} />
+                        <FrontEndForm label={false} lastName={true} policy={true} nda={true} />
                     </div>
                 </div>
             </div>
