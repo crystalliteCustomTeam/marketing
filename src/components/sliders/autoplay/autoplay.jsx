@@ -12,7 +12,8 @@ export default function AutoPlaySlider({
     options,
     align = "start",
     children,
-    arrows = true
+    arrows = true,
+    arrowsCss,
 }) {
     const plugins = [
         ClassNames(),
@@ -34,7 +35,7 @@ export default function AutoPlaySlider({
                     {children}
                 </div>
             </div>
-            {arrows && <div className="flex gap-10 justify-between mt-10">
+            {arrows && <div className={`flex gap-10 justify-between mt-10 ${arrowsCss}`}>
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
             </div>}
