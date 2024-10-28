@@ -46,7 +46,7 @@ const servicesMenu = [
     },
     {
         text: "SMM Follower & Likes",
-        href: "/smm-follower-&-likes",
+        href: "/smm-follower-and-likes",
     },
     {
         text: "Influencer Marketing",

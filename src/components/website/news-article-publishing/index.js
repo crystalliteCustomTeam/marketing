@@ -1,13 +1,14 @@
-// Next
-import dynamic from "next/dynamic";
-
-const Hero = dynamic(() => import("./hero/hero"));
-const TrustAndCredibility = dynamic(() =>
-  import("./trust-&-credibility/trust-&-credibility")
-);
-const ConvertTypes = dynamic(() => import("./convert-types/convert-types"));
-const Publishing = dynamic(() => import("./publishing/publishing"));
-const CreateDesign = dynamic(() => import("./create-design/create-design"));
-const Campaign = dynamic(() => import("./campaign/campaign"));
-
-export { Hero, TrustAndCredibility, ConvertTypes, Publishing, CreateDesign,Campaign };
+import Hero from "./hero/hero"
+import TrustAndCredibility from "./trust-&-credibility/trust-&-credibility"
+import ConvertTypes from "./convert-types/convert-types"
+import Publishing from "./publishing/publishing"
+import CreateDesign from "./create-design/create-design"
+import Campaign from "./campaign/campaign"
+export {
+  Hero,
+  TrustAndCredibility,
+  ConvertTypes,
+  Publishing,
+  CreateDesign,
+  Campaign,
+}

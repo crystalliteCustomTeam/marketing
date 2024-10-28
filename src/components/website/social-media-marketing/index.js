@@ -1,16 +1,12 @@
-// Next
-import dynamic from "next/dynamic"
-
-const Hero = dynamic(() => import("./hero/hero"))
-const ConvertTypes = dynamic(() => import("./convert-types/convert-types"))
-const OurMarketing = dynamic(() => import("./our-marketing/our-marketing"))
-const ImportanceOf = dynamic(() => import("./importance-of/importance-of"))
-const TrendingPosts = dynamic(() => import("./trending-posts/trending-posts"))
-const SupoortedChannels = dynamic(() => import("./supoorted-channels/supoorted-channels"))
-const Video = dynamic(() => import("./video/video"))
-const CaseStudy = dynamic(() => import("./case-study/case-study"))
-const Services = dynamic(() => import("./services/services"))
-
+import Hero from "./hero/hero"
+import ConvertTypes from "./convert-types/convert-types"
+import OurMarketing from "./our-marketing/our-marketing"
+import ImportanceOf from "./importance-of/importance-of"
+import TrendingPosts from "./trending-posts/trending-posts"
+import SupoortedChannels from "./supoorted-channels/supoorted-channels"
+import Video from "./video/video"
+import CaseStudy from "./case-study/case-study"
+import Services from "./services/services"
 export {
     Hero,
     ConvertTypes,

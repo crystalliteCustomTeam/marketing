@@ -1,17 +1,9 @@
-// Next
-import dynamic from "next/dynamic";
-
-const Hero = dynamic(() => import("./hero/hero"));
-const Feedback = dynamic(() => import("./feedback/feedback"));
-const ConvertTypes = dynamic(() => import("./convert-types/convert-types"));
-const ControlReputation = dynamic(() =>
-  import("./control-reputation/control-reputation")
-);
-const Solutions = dynamic(() => import("./solutions/solutions"));
-const AdvancedManagment = dynamic(() =>
-  import("./advanced-managment/advanced-managment")
-);
-
+import Hero from "./hero/hero"
+import Feedback from "./feedback/feedback"
+import ConvertTypes from "./convert-types/convert-types"
+import ControlReputation from "./control-reputation/control-reputation"
+import Solutions from "./solutions/solutions"
+import AdvancedManagment from "./advanced-managment/advanced-managment"
 export {
   Hero,
   Feedback,
@@ -19,4 +11,4 @@ export {
   ControlReputation,
   Solutions,
   AdvancedManagment,
-};
+}

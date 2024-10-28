@@ -43,11 +43,6 @@ export default function CrossPodcast() {
                   <span className={styles.number}>Episode: 54</span>
                 </div>
               </div>
-              {/* <Image
-                src={Studios}
-                alt="domain"
-                className="rounded-2xl w-full"
-              /> */}
             </div>
           </div>
         </div>

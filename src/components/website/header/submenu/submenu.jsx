@@ -38,7 +38,7 @@ const servicesTwo = [
     },
     {
         text: "SMM Follower <br /> & Likes",
-        href: "/smm-follower-&-likes",
+        href: "/smm-follower-and-likes",
     },
     {
         text: "Influencer <br /> Marketing",

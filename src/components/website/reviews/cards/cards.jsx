@@ -6,9 +6,9 @@ import useEmblaCarousel from "embla-carousel-react"
 // CSS
 import styles from "./cards.module.css"
 // Media
-import Client1 from "media/home/testimonials/clients/1.png"
-import Client2 from "media/home/testimonials/clients/2.png"
-import Client3 from "media/home/testimonials/clients/3.png"
+import Client1 from "media/home/testimonials/clients/4.png"
+import Client2 from "media/home/testimonials/clients/5.png"
+import Client3 from "media/home/testimonials/clients/6.png"
 import PlayIcon from "media/icons/playIcon.png"
 // Components 
 import { CTAGroupReviews, Fancybox, NextButton, PrevButton, usePrevNextButtons } from "@/components"

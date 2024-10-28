@@ -1,12 +1,9 @@
-// Next
-import dynamic from "next/dynamic";
-
-const Hero = dynamic(() => import("./hero/hero"));
-const RevenueGrowth = dynamic(() => import("./revenue-growth/revenue-growth"));
-const Platforms = dynamic(() => import("./platforms/platforms"));
-const AdStrategies = dynamic(() => import("./ad-strategies/ad-strategies"));
-const Solutions = dynamic(() => import("./solutions/solutions"));
-const NumbersSpeak = dynamic(() => import("./numbers-speak/numbers-speak"));
+import Hero from "./hero/hero";
+import RevenueGrowth from "./revenue-growth/revenue-growth";
+import Platforms from "./platforms/platforms";
+import AdStrategies from "./ad-strategies/ad-strategies";
+import Solutions from "./solutions/solutions";
+import NumbersSpeak from "./numbers-speak/numbers-speak";
 export {
   Hero,
   RevenueGrowth,

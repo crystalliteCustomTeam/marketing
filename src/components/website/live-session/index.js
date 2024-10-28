@@ -1,8 +1,5 @@
-// Next
-import dynamic from "next/dynamic"
-
-const Hero = dynamic(() => import("./hero/hero"))
-const Score = dynamic(() => import("./score/score"))
-const ConvertTypes = dynamic(() => import("./convert-types/convert-types"))
-const Sessions = dynamic(() => import("./sessions/sessions"))
+import Hero from "./hero/hero"
+import Score from "./score/score"
+import ConvertTypes from "./convert-types/convert-types"
+import Sessions from "./sessions/sessions"
 export { Hero, Score, ConvertTypes, Sessions }

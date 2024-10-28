@@ -1,12 +1,9 @@
-// Next
-import dynamic from "next/dynamic";
-
-const Hero = dynamic(() => import("./hero/hero"));
-const OneRoof = dynamic(() => import("./one-roof/one-roof"));
-const ConvertTypes = dynamic(() => import("./convert-types/convert-types"));
-const Capabilities = dynamic(() => import("./capabilities/capabilities"));
-const Possibilities = dynamic(() => import("./possibilities/possibilities"));
-const Narratives = dynamic(() => import("./narratives/narratives"));
+import Hero from "./hero/hero";
+import OneRoof from "./one-roof/one-roof";
+import ConvertTypes from "./convert-types/convert-types";
+import Capabilities from "./capabilities/capabilities";
+import Possibilities from "./possibilities/possibilities";
+import Narratives from "./narratives/narratives";
 export {
   Hero,
   OneRoof,

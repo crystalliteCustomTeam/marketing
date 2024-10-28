@@ -32,7 +32,7 @@
   @apply w-full h-full rounded-2xl;
 }
 .episode {
-  @apply absolute left-[40px] bottom-[40px] flex w-[170px] bg-white rounded-full items-center h-[40px] gap-3;
+  @apply absolute sm:left-[40px] left-[20px] sm:bottom-[40px] bottom-[20px] flex w-[170px] bg-white rounded-full items-center h-[40px] gap-3;
 }
 .episode .icon {
   @apply w-[60px] bg-blue h-full flex items-center rounded-full justify-center;

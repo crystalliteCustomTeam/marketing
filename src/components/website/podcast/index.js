@@ -1,11 +1,14 @@
-// Next
-import dynamic from "next/dynamic"
-
-const Hero = dynamic(() => import("./hero/hero"))
-const AudioPlayer = dynamic(() => import("./audioPlayer/audioPlayer"))
-const LatestPodcast = dynamic(() => import("./latest-podcast/latest-podcast"))
-const PodcastingExcellence = dynamic(() =>
-  import("./podcasting-excellence/podcasting-excellence")
-)
-const CrossPodcast = dynamic(() => import("./cross-podcast/cross-podcast"))
-export { Hero, AudioPlayer, LatestPodcast, PodcastingExcellence, CrossPodcast }
+import Hero from "./hero/hero"
+import AudioPlayer from "./audioPlayer/audioPlayer"
+import LatestPodcast from "./latest-podcast/latest-podcast"
+import PodcastingExcellence from "./podcasting-excellence/podcasting-excellence"
+import TrendingPodcasts from "./trending-podcasts/trending-podcasts"
+import CrossPodcast from "./cross-podcast/cross-podcast"
+export {
+  Hero,
+  AudioPlayer,
+  LatestPodcast,
+  PodcastingExcellence,
+  CrossPodcast,
+  TrendingPodcasts,
+}

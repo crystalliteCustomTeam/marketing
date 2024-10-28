@@ -12,85 +12,85 @@ const data = [
         "title": "Book Launch <br class='hidden sm:block' /> Campaigns",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/book-launch-campaigns"
     },
     {
         "title": "Social Media <br class='hidden sm:block' /> Marketing",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/social-media-marketing"
     },
     {
         "title": "Video Book <br class='hidden sm:block' /> Trailer",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/video-book-trailer"
     },
     {
         "title": "News / Article <br class='hidden sm:block' /> Publishing",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/news-article-publishing"
     },
     {
         "title": "Amazon <br class='hidden sm:block' /> Optimization",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/amazon-optimization"
     },
     {
         "title": "Online Reputation <br class='hidden sm:block' /> Management",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/online-reputation-management"
     },
     {
         "title": "Search Engine <br class='hidden sm:block' /> Optimization",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/search-engine-optimization"
     },
     {
         "title": "Paid Ad <br class='hidden sm:block' /> Campaigns",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/paid-ad-campaigns"
     },
     {
         "title": "TV <br class='hidden sm:block' /> Interviews",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/tv-interviews"
     },
     {
         "title": "SMM Follower <br class='hidden sm:block' /> & Likes",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/smm-follower-and-likes"
     },
     {
         "title": "Print Placement <br class='hidden sm:block' /> (Magazine)",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/print-placement"
     },
     {
         "title": "Google Knowledge <br class='hidden sm:block' /> Panel",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/google-knowledge-panel"
     },
     {
         "title": "Email <br class='hidden sm:block' /> Newsletter",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/email-newsletter"
     },
     {
         "title": "Influencer <br class='hidden sm:block' /> Marketing",
         "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
         "cta": "Read More",
-        "ctaLink": "javascript:;"
+        "ctaLink": "/influencer-marketing"
     }
 ]
 

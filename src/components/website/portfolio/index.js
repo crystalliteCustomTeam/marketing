@@ -1,10 +1,4 @@
-// Next
-import dynamic from "next/dynamic"
+import Hero from "./hero/hero"
+import OurWork from "./our-work/our-work"
 
-const Hero = dynamic(() => import("./hero/hero"))
-const OurWork = dynamic(() => import("./our-work/our-work"))
-
-export {
-    Hero,
-    OurWork
-}
+export { Hero, OurWork }

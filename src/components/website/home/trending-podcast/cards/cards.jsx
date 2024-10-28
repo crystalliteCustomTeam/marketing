@@ -111,7 +111,7 @@ export default function Cards() {
                             </div>
                         </div>
                         <p className={style.para}>{desc}</p>
-                        <Link href="/" className={style.cta}>
+                        <Link href="/podcasts" className={style.cta}>
                             {cta}
                         </Link>
                     </div>
