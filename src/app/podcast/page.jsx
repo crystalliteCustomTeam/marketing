@@ -1,5 +1,5 @@
 import { Awards } from "@/components";
-import { Hero, LatestPodcast } from "@/components/website/podcast";
+import { CrossPodcast, Hero, LatestPodcast, PodcastingExcellence } from "@/components/website/podcast";
 
 
 export default function Podcast() {
@@ -8,6 +8,8 @@ export default function Podcast() {
     <Hero/>
     <Awards/>
     <LatestPodcast/>
+    <PodcastingExcellence/>
+    <CrossPodcast/>
     </>
   )
 }
