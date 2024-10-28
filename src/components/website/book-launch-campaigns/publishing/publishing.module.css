@@ -3,7 +3,7 @@
 }
 
 .img {
-  @apply lg:absolute lg:top-0 lg:left-14 lg:bottom-0 lg:w-[50%] lg:h-full lg:object-fill lg:object-center;
+  @apply lg:absolute lg:top-0 lg:left-14 lg:bottom-0 lg:w-[50%] lg:h-full lg:object-contain lg:object-center;
 }
 
 .grids {
