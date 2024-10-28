@@ -6,6 +6,7 @@ import styles from "./campaign.module.css"
 import Statistics from "media/email-newsletter/statistics.png"
 // Components
 import { CTAGroupLight } from "@/components"
+
 export default function Campaign() {
     return (
         <section>
