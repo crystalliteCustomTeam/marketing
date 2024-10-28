@@ -6,6 +6,7 @@ import Image from "next/image"
 import Banner from "media/home/billboard/banner_bg.png"
 // Components
 import { CTA } from "@/components"
+import Video from "./video/video"
 
 const data = [
     [
@@ -26,7 +27,7 @@ export default function Billboard() {
     return (
         <section>
             <div className={styles.root}>
-                <Image src={Banner} alt="banner_bg" draggable={false} className={styles.banner} />
+                <Video/>
                 <div className="container">
                     <div className={styles.__grid}>
                         <div className={styles.card}>
