@@ -1,6 +1,8 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
 import { CTAGroupLight } from "@/components"
-import Slider from "./slider/slider"
+const Slider = dynamic(() => import("./slider/slider"))
 // Css
 import style from "./published-books.module.css"
 

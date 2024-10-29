@@ -19,6 +19,7 @@ const Traditional = dynamic(() => import("./website/traditional/traditional"))
 const Banner1 = dynamic(() => import("./website/banner-cta/banner-cta"))
 const Header = dynamic(() => import("./website/header/header"))
 const Footer = dynamic(() => import("./website/footer/footer"))
+const MobileRender = dynamic(() => import("./MobileRender"))
 
 
 export {
@@ -42,5 +43,6 @@ export {
   Traditional,
   Banner1,
   Fancybox,
-  Popup
+  Popup,
+  MobileRender
 }

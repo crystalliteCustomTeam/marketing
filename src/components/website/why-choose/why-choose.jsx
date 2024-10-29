@@ -1,6 +1,8 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
+const Cards = dynamic(() => import('./cards/cards'))
 import { CTAGroupLight } from "@/components"
-import Cards from "./cards/cards"
 // Css
 import styles from "./why-choose.module.css"
 

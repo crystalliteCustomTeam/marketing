@@ -1,6 +1,8 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
 import { CTA } from "@/components"
-import Video from "./video/video"
+const Video = dynamic(() => import("./video/video"))
 // Css
 import styles from "./billboard.module.css"
 

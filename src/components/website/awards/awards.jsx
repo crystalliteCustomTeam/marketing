@@ -1,5 +1,7 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
-import Slider from "./slider/slider"
+const Slider = dynamic(() => import('./slider/slider'))
 // Css
 import style from "./awards.module.css"
 

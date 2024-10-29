@@ -1,7 +1,9 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
 import { CTAGroupDark } from "@/components"
-import Video from "./video/video"
-import Slider from "./slider/slider"
+const Video = dynamic(() => import("./video/video"))
+const Slider = dynamic(() => import("./slider/slider"))
 // Css
 import style from "./hero.module.css"
 

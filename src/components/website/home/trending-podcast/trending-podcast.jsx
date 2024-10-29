@@ -1,5 +1,7 @@
+// Next
+import dynamic from "next/dynamic"
 // Components
-import Cards from "./cards/cards"
+const Cards = dynamic(() => import("./cards/cards"));
 import { CTAGroupDark } from "@/components"
 // Css
 import style from "./trending-podcast.module.css"

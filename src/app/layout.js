@@ -3,8 +3,7 @@ import "./globals.css"
 // Fonts
 import { fontManrope, fontMono, fontSans } from "./fonts"
 // Components
-import { Footer, Header } from "@/components"
-import { Popup } from "@/components"
+import { Footer, Header, Popup } from "@/components"
 // Meta Data
 export const metadata = {
   title: "Book Marketing",

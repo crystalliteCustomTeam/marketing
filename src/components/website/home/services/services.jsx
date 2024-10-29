@@ -1,10 +1,11 @@
 // Next
 import Link from "next/link"
 import Image from "next/image"
+import dynamic from "next/dynamic"
 // Media
 import ChevronRight from "media/icons/right-chevron-pink.svg"
 // Components
-import Cards from "./cards/cards"
+const Cards = dynamic(() => import("./cards/cards"))
 // Css
 import styles from "./services.module.css"
 
