@@ -1,5 +1,3 @@
-// Css
-import style from "./slider.module.css"
 // Components
 import { AutoScrollSlider } from "@/components"
 // Media
@@ -9,6 +7,8 @@ import Three from "media/home/awards/3.webp"
 import Four from "media/home/awards/4.webp"
 // Next
 import Image from "next/image"
+// Css
+import style from "./slider.module.css"
 
 export default function Slider() {
     return (

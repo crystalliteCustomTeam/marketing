@@ -1,8 +1,8 @@
+// Components
+import { CTAGroupLight } from "@/components"
+import Slider from "./slider/slider"
 // Css
 import style from "./published-books.module.css"
-// Components
-import Slider from "./slider/slider"
-import { CTAGroupLight } from "@/components"
 
 export default function PublishedBooks() {
     return (

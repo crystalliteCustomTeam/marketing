@@ -31,7 +31,7 @@ export default function Popup() {
             <DialogTrigger asChild>
                 Open Now
             </DialogTrigger>
-            <DialogContent className="p-[25px] 2xl:p-[50px] rounded-[15px] 2xl:rounded-[30px]">
+            <DialogContent className="p-[25px] 2xl:p-[50px] rounded-[40px]">
                 <VisuallyHidden.Root>
                     <DialogHeader>
                         <VisuallyHidden.Root>

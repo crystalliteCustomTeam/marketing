@@ -1,11 +1,11 @@
 // Components
 import { FrontEndForm } from "@/components"
-// Css
-import style from "./contact.module.css"
 // Media
 import Book from "media/home/contact-book.png"
 // Next
 import Image from "next/image"
+// Css
+import style from "./contact.module.css"
 
 export default function contact() {
     return (

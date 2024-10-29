@@ -1,7 +1,7 @@
-// Css
-import styles from "./trusted-clients.module.css"
 // Components
 import Logos from "./logos/logos"
+// Css
+import styles from "./trusted-clients.module.css"
 
 export default function TrustedClients() {
     return (

@@ -1,9 +1,7 @@
-// Next
-import dynamic from "next/dynamic"
+// Components
+import Cards from "./cards/cards"
 // Css
 import styles from "./reviews.module.css"
-// Components
-const Cards = dynamic(() => import("./cards/cards"))
 
 export default function OurCustomers({ bg = "bg-[#F2F5F7]" }) {
     return (

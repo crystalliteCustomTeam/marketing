@@ -40,8 +40,8 @@ export default function Cards() {
     return (
         <div className={styles.grids}>
             {
-                data.map(([title, desc], i) => (
-                    <div key={i} className={`${styles.cards} group`}>
+                data.map(([title, desc]) => (
+                    <div key={title} className={`${styles.cards} group`}>
                         <h3 className={`${styles.title} group-hover:text-white`}
                             dangerouslySetInnerHTML={{ __html: title }}
                         />

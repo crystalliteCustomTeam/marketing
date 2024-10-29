@@ -1,11 +1,11 @@
-// Css
-import style from "./latest-published.module.css"
 // Next
 import Image from "next/image"
 // Media
 import Book from "media/home/hardcover_book.png"
 // Components
 import { Counter, CTAGroupLight } from "@/components"
+// Css
+import style from "./latest-published.module.css"
 
 const data = [
     [5, "Books Published"],
@@ -25,8 +25,8 @@ export default function LatestPublished() {
                             <p className={style.para}>All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
                             <div className={style.counters}>
                                 {
-                                    data.map(([value, text], i) => (
-                                        <div key={i} className={style.counterCard}>
+                                    data.map(([value, text]) => (
+                                        <div key={value} className={style.counterCard}>
                                             <Counter value={value} className={style.numbers} />
                                             <span className={style.about}>{text}</span>
                                         </div>

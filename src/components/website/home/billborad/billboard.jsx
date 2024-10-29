@@ -1,12 +1,8 @@
-// Css
-import styles from "./billboard.module.css"
-// Next
-import Image from "next/image"
-// Media
-import Banner from "media/home/billboard/banner_bg.png"
 // Components
 import { CTA } from "@/components"
 import Video from "./video/video"
+// Css
+import styles from "./billboard.module.css"
 
 const data = [
     [
@@ -27,7 +23,7 @@ export default function Billboard() {
     return (
         <section>
             <div className={styles.root}>
-                <Video/>
+                <Video />
                 <div className="container">
                     <div className={styles.__grid}>
                         <div className={styles.card}>
@@ -35,8 +31,8 @@ export default function Billboard() {
                             <p className={styles.para}>Times Square, a major tourist attraction known for  its iconic outdoor advertising, giant billboards, and digital displays,  makes it one of the world's most photographed landmarks</p>
                             <div className={styles.opinion}>
                                 {
-                                    data.map(([title, desc], i) => (
-                                        <div key={i}>
+                                    data.map(([title, desc]) => (
+                                        <div key={title}>
                                             <h4 className={styles.counter}>{title}</h4>
                                             <p className={styles.desc}>{desc}</p>
                                         </div>

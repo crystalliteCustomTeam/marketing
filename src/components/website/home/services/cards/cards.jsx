@@ -1,11 +1,11 @@
-// Css
-import styles from "./cards.module.css"
 // Components
 import { CTA } from "@/components"
 // Next
 import Image from "next/image"
 // Media
 import Promo from "media/home/services/promo.png"
+// Css
+import styles from "./cards.module.css"
 
 const data = [
     {
@@ -98,8 +98,8 @@ export default function Cards() {
     return (
         <div className={styles.root}>
             {
-                data.map(({ title, para, cta, ctaLink }, i) => (
-                    <div key={i} className={`${styles.cards} group`}>
+                data.map(({ title, para, cta, ctaLink }) => (
+                    <div key={title} className={`${styles.cards} group`}>
                         <h3 className={`${styles.title} group-hover:text-white`}
                             dangerouslySetInnerHTML={{ __html: title }}
                         />
