@@ -48,7 +48,7 @@ export default function Popup() {
                         <p className={style.para}>We are known for our writing skills that help you attract multiple readers. Our professional e-book writers create magic with the words. Take a look:</p>
                         <FrontEndForm label={false} theme="popup" />
                     </div>
-                    <Image src={Book} alt="domain" placeholder="blur" className={style.__img} />
+                    <Image src={Book} alt="domain" priority className={style.__img} />
                 </div>
             </DialogContent>
         </Dialog>

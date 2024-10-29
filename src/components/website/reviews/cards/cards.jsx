@@ -103,7 +103,7 @@ export default function Testimonials() {
                     data1.map(([img], i) => (
                         <div key={i} className={styles.embla__slide}>
                             <a data-fancybox="gallery" href="https://vimeo.com/1015023376">
-                                <Image src={img} alt="domain" placeholder="blur" />
+                                <Image src={img} alt="domain" />
                                 <svg className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_b_2260_15927)">
                                         <rect x="0.439697" y="0.276367" width="70.5076" height="70.5076" rx="35.2538" fill="#1B1B1D" fillOpacity="0.5" />
