@@ -9,7 +9,7 @@ const CTA = dynamic(() => import("./cta/cta"))
 import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
-const Fancybox = dynamic(() => import("./fancyBox/fancyBox"))
+const FancyBox = dynamic(() => import("./FancyBox"))
 const Popup = dynamic(() => import("./website/popup/popup"))
 const Awards = dynamic(() => import("./website/awards/awards"))
 const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
@@ -42,7 +42,7 @@ export {
   TrustedClients,
   Traditional,
   Banner1,
-  Fancybox,
+  FancyBox,
   Popup,
   MobileRender
 }

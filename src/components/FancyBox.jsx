@@ -5,7 +5,7 @@ import React, { useRef, useEffect } from "react"
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-export default function Fancybox({ delegate, options, className, children }) {
+export default function FancyBox({ delegate, options, className, children }) {
     const containerRef = useRef(null)
 
     useEffect(() => {

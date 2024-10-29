@@ -8,7 +8,7 @@ import Client1 from "media/home/testimonials/clients/4.png"
 import Client2 from "media/home/testimonials/clients/5.png"
 import Client3 from "media/home/testimonials/clients/6.png"
 // Components 
-import { CTAGroupReviews, Fancybox, NextButton, PrevButton, usePrevNextButtons } from "@/components"
+import { CTAGroupReviews, FancyBox, NextButton, PrevButton, usePrevNextButtons } from "@/components"
 // Next
 import Image from "next/image"
 // CSS
@@ -91,7 +91,7 @@ export default function Testimonials() {
     } = usePrevNextButtons(emblaApi)
     return (
         <div className={styles.embla} ref={emblaRef}>
-            <Fancybox
+            <FancyBox
                 options={{
                     Carousel: {
                         infinite: false,
@@ -122,7 +122,7 @@ export default function Testimonials() {
                         </div>
                     ))
                 }
-            </Fancybox>
+            </FancyBox>
             <div className={styles.embla_thumbs} ref={emblaThumbsRef}>
                 <div className={styles.embla_thumbs__container}>
                     {
