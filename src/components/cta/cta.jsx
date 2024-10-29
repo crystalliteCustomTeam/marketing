@@ -1,4 +1,4 @@
-export function CTA({
+export default function CTA({
     text = "Get Started",
     link = "javascript:;",
     icon = "chat",

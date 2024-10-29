@@ -1,6 +1,9 @@
+// Components
 import { CTAGroupLight } from "@/components"
-import styles from "./traditional.module.css"
 import Cards from "./cards/cards"
+// Css
+import styles from "./traditional.module.css"
+
 export default function Traditional() {
     return (
         <section>

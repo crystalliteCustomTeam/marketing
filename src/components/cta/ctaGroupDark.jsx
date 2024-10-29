@@ -1,5 +1,5 @@
 // Components
-import { CTA } from "./cta"
+import { CTA } from "@/components"
 
 export function CTAGroupDark() {
     return (
