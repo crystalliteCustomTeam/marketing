@@ -1,5 +1,5 @@
 // Components
-import { FrontEndForm } from "@/components"
+import { FrontEndForm, MobileRender } from "@/components"
 // Media
 import Book from "media/home/contact-book.png"
 // Next
@@ -11,7 +11,9 @@ export default function contact() {
     return (
         <section>
             <div className={style.root}>
-                <Image src={Book} alt="domain" className={style.banner} />
+                <MobileRender>
+                    <Image src={Book} alt="domain" className={style.banner} />
+                </MobileRender>
                 <div className="container">
                     <div className={style.content}>
                         <h2 className={style.title}>We would love to hear from you!</h2>

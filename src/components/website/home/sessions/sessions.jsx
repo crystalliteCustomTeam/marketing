@@ -3,7 +3,7 @@ import Image from "next/image"
 // Media
 import Screens from "media/home/sessions.png"
 // Components
-import { CTA } from "@/components"
+import { CTA, MobileRender } from "@/components"
 // Css
 import style from "./sessions.module.css"
 
@@ -13,11 +13,13 @@ export default function Sessions() {
     return (
         <section>
             <div className={style.root}>
-                <svg className={style.camera} width="230" height="377" viewBox="0 0 230 377" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.395 364.09H-112.394C-178.289 364.09 -200.184 320.3 -200.184 276.3V100.721C-200.184 34.826 -178.289 12.9307 -112.394 12.9307H19.395C85.2896 12.9307 107.185 34.826 107.185 100.721V276.3C107.185 342.195 85.0811 364.09 19.395 364.09Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M165.155 294.86L107.185 254.198V122.617L165.155 81.9541C193.515 62.1441 216.87 74.2386 216.87 109.063V267.96C216.87 302.784 193.515 314.879 165.155 294.86Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M-2.08323 167.656C15.1917 167.656 29.1958 153.652 29.1958 136.377C29.1958 119.102 15.1917 105.098 -2.08323 105.098C-19.3582 105.098 -33.3623 119.102 -33.3623 136.377C-33.3623 153.652 -19.3582 167.656 -2.08323 167.656Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                <MobileRender>
+                    <svg className={style.camera} width="230" height="377" viewBox="0 0 230 377" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.395 364.09H-112.394C-178.289 364.09 -200.184 320.3 -200.184 276.3V100.721C-200.184 34.826 -178.289 12.9307 -112.394 12.9307H19.395C85.2896 12.9307 107.185 34.826 107.185 100.721V276.3C107.185 342.195 85.0811 364.09 19.395 364.09Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M165.155 294.86L107.185 254.198V122.617L165.155 81.9541C193.515 62.1441 216.87 74.2386 216.87 109.063V267.96C216.87 302.784 193.515 314.879 165.155 294.86Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M-2.08323 167.656C15.1917 167.656 29.1958 153.652 29.1958 136.377C29.1958 119.102 15.1917 105.098 -2.08323 105.098C-19.3582 105.098 -33.3623 119.102 -33.3623 136.377C-33.3623 153.652 -19.3582 167.656 -2.08323 167.656Z" stroke="white" strokeOpacity="0.04" strokeWidth="24.5812" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </MobileRender>
                 <div className="container">
                     <div className={style._flex}>
                         <div className={style.left}>

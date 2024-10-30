@@ -10,7 +10,7 @@
 .__content {
   @apply py-8;
 }
-.__leftGrid > a > img {
+.__leftGrid > a > svg {
   @apply mx-auto xl:mx-[inherit]
 }
 .title {
