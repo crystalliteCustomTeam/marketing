@@ -22,7 +22,9 @@ export default function Possibilities() {
                                 [PossibilityImg3]
                             ].map(([img], i) => (
                                 <div key={i} className={styles.card}>
-                                    <Image src={img} alt="domain" className="mx-auto" />
+                                    <div className={styles.imgCard}>
+                                    <Image src={img} alt="domain" className={styles.img} />
+                                    </div>
                                     <div className={styles.content}>
                                         <h3 className={styles.title}>Book Marketing</h3>
                                         <p className={styles.desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
