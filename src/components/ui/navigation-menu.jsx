@@ -49,7 +49,7 @@ const NavigationMenuContent = React.forwardRef(({ className, ...props }, ref) =>
   <NavigationMenuPrimitive.Content
     ref={ref}
     className={cn(
-      "left-0 top-0 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 absolute right-0 container py-10",
+      "left-0 top-0 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 absolute right-0 container py-5",
       className
     )}
     {...props} />
@@ -59,10 +59,10 @@ NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName
 const NavigationMenuLink = NavigationMenuPrimitive.Link
 
 const NavigationMenuViewport = React.forwardRef(({ className, ...props }, ref) => (
-  <div className={cn("absolute left-0 right-0 top-full flex justify-center")}>
+  <div className={cn("absolute left-0 right-0 top-full mt-[3px] flex justify-center")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
-        "relative  h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden [mixBlendMode:plus-lighter] [backdropFilter:blur(32.0079px)] bg-white navbar-shadow data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90",
+        "relative  h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden navbar-shadow data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 backdrop-blur-2xl bg-white/85",
         className
       )}
       ref={ref}

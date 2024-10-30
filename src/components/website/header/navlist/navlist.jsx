@@ -6,7 +6,6 @@ import { NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, Navigati
 import Submenu from "../submenu/submenu"
 
 export default function Navlist() {
-
     return (
         <>
             <NavigationMenuList>

@@ -1,9 +1,9 @@
 .root {
-    @apply absolute left-0 right-0 top-0 z-50
+    @apply absolute left-0 right-0 top-0 z-50 transition duration-200 cursor-pointer
 }
 
 .navbar {
-    @apply text-white text-lg font-manrope font-medium
+    @apply text-lg font-manrope font-medium
 }
 
 .row {
@@ -23,5 +23,5 @@
 }
 
 .cta {
-    @apply hidden sm:block
+    @apply hidden sm:block text-white
 }
