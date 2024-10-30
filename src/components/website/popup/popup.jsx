@@ -14,22 +14,8 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 
 export default function Popup() {
-    const [open, setOpen] = useState(false)
-    useEffect(() => {
-        const handleLoad = () => {
-            setTimeout(() => {
-                setOpen(true)
-            }, 5000)
-        }
-
-        window.onload = handleLoad
-
-        return () => {
-            window.onload = null
-        }
-    }, [setOpen])
     return (
-        <Dialog open={open} onOpenChange={setOpen}>
+        <Dialog defaultOpen={true}>
             <DialogTrigger asChild>
                 Open Now
             </DialogTrigger>
