@@ -10,6 +10,7 @@ import { CTAGroupDark } from "./cta/ctaGroupDark"
 import { CTAGroupLight } from "./cta/ctaGroupLight"
 import { CTAGroupReviews } from "./cta/ctaGroupReviews"
 const FancyBox = dynamic(() => import("./FancyBox"))
+const Popup = dynamic(() => import("./website/popup/popup"))
 const Awards = dynamic(() => import("./website/awards/awards"))
 const WhyChoose = dynamic(() => import("./website/why-choose/why-choose"))
 const Reviews = dynamic(() => import("./website/reviews/reviews"))
@@ -18,8 +19,7 @@ const Traditional = dynamic(() => import("./website/traditional/traditional"))
 const Banner1 = dynamic(() => import("./website/banner-cta/banner-cta"))
 const Header = dynamic(() => import("./website/header/header"))
 const Footer = dynamic(() => import("./website/footer/footer"))
-import MobileRender from "./MobileRender"
-import Popup from "./website/popup/popup"
+const MobileRender = dynamic(() => import("./MobileRender"))
 
 
 export {
