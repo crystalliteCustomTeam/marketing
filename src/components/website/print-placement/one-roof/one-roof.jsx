@@ -10,8 +10,8 @@ export default function OneRoof() {
     return (
         <section>
             <div className={styles.root}>
+                <div className="container relative z-10 overflow-x-clip lg:pb-[270px] md:pb-[80px] pb-[60px]">
                 <Image src={Book} alt="domain" className={styles.img} />
-                <div className="container">
                     <div className={styles.__grid}>
                         <div className={styles.column}>
                             <h2 className={styles.title}>Print Placement (Magazine) that’s always-on! Everything Social, Under One Roof</h2>

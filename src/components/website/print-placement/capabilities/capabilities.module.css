@@ -2,7 +2,7 @@
   @apply lg:pt-[20px] lg:pb-[80px] py-[60px];
 }
 .__grid {
-  @apply grid lg:grid-cols-2 grid-cols-1 gap-x-5 items-center;
+  @apply grid lg:grid-cols-2 grid-cols-1 gap-y-10 gap-x-5 items-center;
 }
 .content {
   @apply max-w-[660px] mx-auto;
