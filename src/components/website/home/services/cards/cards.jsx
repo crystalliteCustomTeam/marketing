@@ -1,5 +1,5 @@
 // Components
-import { CTA } from "@/components"
+import { CTA, MobileRender } from "@/components"
 // Next
 import Image from "next/image"
 // Media
@@ -116,18 +116,20 @@ export default function Cards() {
                     </div>
                 ))
             }
-            <div className={styles.promo}>
-                <div>
-                    <h3 className={styles.title}>
-                        Estimate Your Book Marketing <br className="hidden sm:block" />  Project’s Cost Now!
-                    </h3>
-                    <p className={styles.para}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
-                    </p>
-                    <CTA css="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)] hover:bg-black hover:border hover:border-white hover:text-white" text="Let’s Talk!" icon="chat-pink" />
+            <MobileRender>
+                <div className={styles.promo}>
+                    <div>
+                        <h3 className={styles.title}>
+                            Estimate Your Book Marketing <br className="hidden sm:block" />  Project’s Cost Now!
+                        </h3>
+                        <p className={styles.para}>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
+                        </p>
+                        <CTA css="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)] hover:bg-black hover:border hover:border-white hover:text-white" text="Let’s Talk!" icon="chat-pink" />
+                    </div>
+                    <Image src={Promo} alt="domain" />
                 </div>
-                <Image src={Promo} alt="domain" />
-            </div>
+            </MobileRender>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import dynamic from "next/dynamic"
 import ChevronRight from "media/icons/right-chevron-pink.svg"
 // Components
 const Cards = dynamic(() => import("./cards/cards"))
+import { MobileRender } from "@/components"
 // Css
 import styles from "./services.module.css"
 
@@ -16,11 +17,13 @@ export default function Services() {
                 <div className="container">
                     <div className={styles.content}>
                         <h2 className={styles.title}>What we do!</h2>
-                        <p className={styles.para}>Promote your book through a team of dedicated experts who understand  your physical, emotional, and monetary investment into the project and  are ready, willing, and able to take your book marketing worldwide.</p>
-                        <Link className={styles.link} href="/">
-                            <span>Explore</span>
-                            <Image src={ChevronRight} alt="domain" />
-                        </Link>
+                        <MobileRender>
+                            <p className={styles.para}>Promote your book through a team of dedicated experts who understand  your physical, emotional, and monetary investment into the project and  are ready, willing, and able to take your book marketing worldwide.</p>
+                            <Link className={styles.link} href="/">
+                                <span>Explore</span>
+                                <Image src={ChevronRight} alt="domain" />
+                            </Link>
+                        </MobileRender>
                     </div>
                     <Cards />
                 </div>
