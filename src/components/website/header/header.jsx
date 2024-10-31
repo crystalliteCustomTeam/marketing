@@ -1,9 +1,5 @@
 "use client"
-// Next
-import Image from "next/image"
 import Link from "next/link"
-// Media
-import Logo from "media/logo.png"
 // Components
 import Navlist from "./navlist/navlist"
 import MobileNav from "./mobilenav/mobilenav"
@@ -36,7 +32,7 @@ export default function Header() {
     useEffect(() => {
         const mouseEnterHandle = () => {
             setMouseHover(true)
-            ref.current.classList.add("backdrop-blur-2xl", "bg-white/85", "border-b-4", "border-black")
+            ref.current.classList.add("backdrop-blur-3xl", "bg-white/95", "border-b-4", "border-black")
         }
 
         const header = ref.current
@@ -55,7 +51,7 @@ export default function Header() {
     useEffect(() => {
         const mouseLeaveHandle = () => {
             setMouseHover(false)
-            ref.current.classList.remove("backdrop-blur-2xl", "bg-white/85", "border-b-4", "border-black")
+            ref.current.classList.remove("backdrop-blur-3xl", "bg-white/95", "border-b-4", "border-black")
         }
 
         const header = ref.current
