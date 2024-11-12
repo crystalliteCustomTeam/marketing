@@ -35,10 +35,12 @@ export default function AutoPlaySlider({
                     {children}
                 </div>
             </div>
-            {arrows && <div className={`flex gap-10 justify-between mt-10 ${arrowsCss}`}>
-                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-            </div>}
+            {
+                arrows && <div className={`flex gap-10 justify-between mt-10 ${arrowsCss}`}>
+                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                </div>
+            }
         </>
     )
 }
